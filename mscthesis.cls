@@ -352,7 +352,7 @@
             \iffirstcompanypicture
                 \includegraphics[width=.1\paperwidth]{\@firstcompanylogopath}\hspace{2ex}
             \fi
-            \includegraphics[width=.1\paperwidth]{media/titlepage/logo-uva.png}\hspace{2ex}
+            \includegraphics[width=.1\paperwidth]{media/uva-logo.png}\hspace{2ex}
             \ifsecondcompanypicture
                 \includegraphics[width=.1\paperwidth]{\@secondcompanylogopath}
             \fi

@@ -1,45 +1,35 @@
 \section{Introduction}
 \label{sec:introduction}
-% Mention scientific context/field, problem statement, research gap and (sub) research question(s). 
-Write your introduction here. It should be immediately clear how your proposed contribution is scientifically relevant and fills the research gap. This is a test citation \cite{Gruber1995}
 
-Towards the end of the introduction, you should also add your \textit{preliminary} \textbf{reasearch questions (RQ)} here. You may want to state your main RQ like this:
+Globally, it is estimated that people spend approximately 90\% of their time indoors \cite{schweizer_indoor_2007, klepeis_national_2001} and breath 11.000 liters of air per day \cite{corlan_importance_2021}. Suboptimal indoor air quality (IAQ) conditions affect building occupants' experiences of comfort and insufficient ventilation in indoor spaces is proven to play significant roles in occupants' well-being, health and cognitive functions \cite{, wang_how_2021, kim_analyzing_2019}. 
 
-\noindent\textit{To what extent can a master thesis template enhance the quality of the final thesis?}
+The research into the influence of Indoor Environmental Quality (IEQ) \cite{kulshreshtha_indoor_2024} on occupants', including acoustic, thermal and visual conditions, is gaining more attention espicially the field of indoor ventilation. One core aspect of air quality is its invisibility to occupants \cite{son_perceived_2023}, polluted air is not easily detected by smell or sight. Additionally, mechanical ventilation systems in buildings operate discreetly, contributing to occupants' perceived lack of control since these systems are typically automated and cannot be directly regulated or controlled by occupants themselves.
 
-You can then list the sub-questions as:
+This thesis focuses on understanding occupants' needs through in-the-wild studies measuring indoor air quality in specific spaces (e.g. meeting rooms) and arprototyping various persuasive technologies and data physicalization devices to visualize indoor air quality and evaluating their effectiveness with the overall goal of gathering insights into occupants' comfort levels and helping them to take preventive action against poor indoor air quality. This creates an interplay between occupants' health and comfort, architecture and built environments, and computing technologies.
+
+Researching occupants' subjective needs, experiences, and behavior, coupled with a human-centric design approach, has the potential to improve occupants' well-being and create indoor environments with good indoor air quality. Furthermore, it provides valuable insights to faculty staff in making decisions in setting up ventilation systems, arranging indoor spaces, and informing architecture and interior design studios on making decisions about structuring spaces and integrating computing technologies within built environments.
+
+While research on defining comfort within indoor buildings, gathering and analyzing sensory indoor climate data, and the effects of poor air quality are prevalent, there is a gap in understanding occupants' behavior and their subjective needs, along with limited research on how design solutions visualize environmental data and computing installations can empower occupants, particularly within the field of physically visualizing data to convey IAQ to building occupants in real-time.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{complexity_diagram_indoor_air_quality.png}
+    \caption{Complexity diagram providing an overview of the effects of Indoor Air Quality and needs of occupants}
+    \label{fig:mesh1}
+\end{figure}
+
+
+
+\subsection{Research questions}
+
+In order to research intervention strategies for improving indoor air quality, the following main research question is formulated: \\
+
+\emph{\textbf{RQ:} How can real-time sensory measurements and future predictions of air quality be physically visualised in specific indoor spaces integrating both environmental information and elements that increase awareness among occupants facilitating their adoption of preventive measures against poor air quality?} \\
+
+To effectively answer this main research question, this research is guided by the following supporting sub-questions that also serve as objectives to delineate the necessary knowledge: \\
+
 \begin{itemize}
-    \item How does the structure of the template influence the final grading?
-    \item To what extent is textual guidance sufficient for structured working?
-    \item \dots
+    \item \textbf{SRQ1:} \emph{How can environmental information related to air quality, such as pollutant concentrations and ventilation rates, be incorporated into the visual representations?}
+    \item \textbf{SRQ2:} \emph{How do different types of physical visualizations impact occupants' understanding of air quality and their willingness to adopt preventive measures?}
+    \item \textbf{SRQ3:} \emph{How do occupants' perceptions and behaviors regarding indoor air quality change over time, from pre to post-installation of the physical representation of poor air quality?}\\
 \end{itemize}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim elit. Aenean tincidunt, augue nec laoreet eleifend, velit est ultrices diam, nec pharetra dolor risus sit amet quam. Fusce nec ultricies velit. Etiam vehicula luctus euismod. Morbi neque justo, venenatis vel tincidunt aliquet, dictum nec erat. Cras condimentum condimentum nulla. Sed sem ipsum, eleifend sed ultricies id, laoreet eu ante. Nulla volutpat sagittis urna, vel dictum dui laoreet non. Ut pretium dolor vitae nibh aliquam volutpat. In in bibendum eros. Suspendisse quis ex eu libero vulputate scelerisque at non ante. Proin efficitur arcu vitae venenatis consequat. Ut in turpis erat. Proin in pharetra nibh. Nam euismod nisl vel gravida fringilla.
-
-Fusce ut blandit mauris. Pellentesque venenatis ligula at leo congue, eu sollicitudin nulla tempor. Maecenas rhoncus facilisis felis quis facilisis. Cras ultrices metus ac nibh ornare, a vehicula felis suscipit. Nunc ex lacus, pretium quis ultrices a, feugiat a sem. Curabitur ut tortor luctus, rhoncus est ac, convallis dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
-
-Morbi consequat at elit vitae egestas. Aliquam fringilla dui mi, eget ultrices arcu vehicula sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eros dui, varius sit amet vehicula et, tincidunt eu ligula. Curabitur non sodales diam. Pellentesque eleifend vitae risus non laoreet. Praesent a bibendum quam, et varius massa. Nullam non luctus ex. Integer et ultrices sem, a imperdiet quam. Phasellus vestibulum, metus eu varius venenatis, ligula tortor consectetur magna, a eleifend arcu ante sit amet eros.
-
-Suspendisse at sapien sapien. Cras lacinia consequat odio sed rhoncus. Nunc ultricies ex iaculis magna lacinia, et ultrices risus commodo. Proin in ante augue. Suspendisse nisl quam, sollicitudin ac felis et, lobortis suscipit quam. Ut placerat malesuada dolor id vulputate. Donec nisl ligula, semper a elit et, maximus rhoncus odio. Nam porttitor elit a est malesuada, vitae feugiat metus bibendum.
-
-Ut faucibus ultrices sem, ut dapibus ante faucibus sit amet. Integer in ipsum pulvinar, vehicula diam eu, semper erat. Fusce eu laoreet nibh. Nullam tincidunt orci eu turpis iaculis, facilisis posuere dolor pretium. Mauris a libero porttitor, fermentum tortor eget, finibus est. Curabitur vel enim vitae ante accumsan auctor. Quisque quis diam sapien. Fusce ultrices malesuada diam, ac bibendum ante viverra ac. Morbi rutrum neque vel semper blandit. Mauris pulvinar nulla metus, et interdum lorem pretium sit amet. Nam vehicula odio elit, at rutrum ex gravida eget. Etiam feugiat a quam at tincidunt. Suspendisse hendrerit nulla sit amet nisi dapibus gravida.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim elit. Aenean tincidunt, augue nec laoreet eleifend, velit est ultrices diam, nec pharetra dolor risus sit amet quam. Fusce nec ultricies velit. Etiam vehicula luctus euismod. Morbi neque justo, venenatis vel tincidunt aliquet, dictum nec erat. Cras condimentum condimentum nulla. Sed sem ipsum, eleifend sed ultricies id, laoreet eu ante. Nulla volutpat sagittis urna, vel dictum dui laoreet non. Ut pretium dolor vitae nibh aliquam volutpat. In in bibendum eros. Suspendisse quis ex eu libero vulputate scelerisque at non ante. Proin efficitur arcu vitae venenatis consequat. Ut in turpis erat. Proin in pharetra nibh. Nam euismod nisl vel gravida fringilla.
-
-Fusce ut blandit mauris. Pellentesque venenatis ligula at leo congue, eu sollicitudin nulla tempor. Maecenas rhoncus facilisis felis quis facilisis. Cras ultrices metus ac nibh ornare, a vehicula felis suscipit. Nunc ex lacus, pretium quis ultrices a, feugiat a sem. Curabitur ut tortor luctus, rhoncus est ac, convallis dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
-
-Morbi consequat at elit vitae egestas. Aliquam fringilla dui mi, eget ultrices arcu vehicula sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eros dui, varius sit amet vehicula et, tincidunt eu ligula. Curabitur non sodales diam. Pellentesque eleifend vitae risus non laoreet. Praesent a bibendum quam, et varius massa. Nullam non luctus ex. Integer et ultrices sem, a imperdiet quam. Phasellus vestibulum, metus eu varius venenatis, ligula tortor consectetur magna, a eleifend arcu ante sit amet eros.
-
-Suspendisse at sapien sapien. Cras lacinia consequat odio sed rhoncus. Nunc ultricies ex iaculis magna lacinia, et ultrices risus commodo. Proin in ante augue. Suspendisse nisl quam, sollicitudin ac felis et, lobortis suscipit quam. Ut placerat malesuada dolor id vulputate. Donec nisl ligula, semper a elit et, maximus rhoncus odio. Nam porttitor elit a est malesuada, vitae feugiat metus bibendum.
-
-Ut faucibus ultrices sem, ut dapibus ante faucibus sit amet. Integer in ipsum pulvinar, vehicula diam eu, semper erat. Fusce eu laoreet nibh. Nullam tincidunt orci eu turpis iaculis, facilisis posuere dolor pretium. Mauris a libero porttitor, fermentum tortor eget, finibus est. Curabitur vel enim vitae ante accumsan auctor. Quisque quis diam sapien. Fusce ultrices malesuada diam, ac bibendum ante viverra ac. Morbi rutrum neque vel semper blandit. Mauris pulvinar nulla metus, et interdum lorem pretium sit amet. Nam vehicula odio elit, at rutrum ex gravida eget. Etiam feugiat a quam at tincidunt. Suspendisse hendrerit nulla sit amet nisi dapibus gravida.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim elit. Aenean tincidunt, augue nec laoreet eleifend, velit est ultrices diam, nec pharetra dolor risus sit amet quam. Fusce nec ultricies velit. Etiam vehicula luctus euismod. Morbi neque justo, venenatis vel tincidunt aliquet, dictum nec erat. Cras condimentum condimentum nulla. Sed sem ipsum, eleifend sed ultricies id, laoreet eu ante. Nulla volutpat sagittis urna, vel dictum dui laoreet non. Ut pretium dolor vitae nibh aliquam volutpat. In in bibendum eros. Suspendisse quis ex eu libero vulputate scelerisque at non ante. Proin efficitur arcu vitae venenatis consequat. Ut in turpis erat. Proin in pharetra nibh. Nam euismod nisl vel gravida fringilla.
-
-Fusce ut blandit mauris. Pellentesque venenatis ligula at leo congue, eu sollicitudin nulla tempor. Maecenas rhoncus facilisis felis quis facilisis. Cras ultrices metus ac nibh ornare, a vehicula felis suscipit. Nunc ex lacus, pretium quis ultrices a, feugiat a sem. Curabitur ut tortor luctus, rhoncus est ac, convallis dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
-
-Morbi consequat at elit vitae egestas. Aliquam fringilla dui mi, eget ultrices arcu vehicula sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eros dui, varius sit amet vehicula et, tincidunt eu ligula. Curabitur non sodales diam. Pellentesque eleifend vitae risus non laoreet. Praesent a bibendum quam, et varius massa. Nullam non luctus ex. Integer et ultrices sem, a imperdiet quam. Phasellus vestibulum, metus eu varius venenatis, ligula tortor consectetur magna, a eleifend arcu ante sit amet eros.
-
-Suspendisse at sapien sapien. Cras lacinia consequat odio sed rhoncus. Nunc ultricies ex iaculis magna lacinia, et ultrices risus commodo. Proin in ante augue. Suspendisse nisl quam, sollicitudin ac felis et, lobortis suscipit quam. Ut placerat malesuada dolor id vulputate. Donec nisl ligula, semper a elit et, maximus rhoncus odio. Nam porttitor elit a est malesuada, vitae feugiat metus bibendum.
-
-Ut faucibus ultrices sem, ut dapibus ante faucibus sit amet. Integer in ipsum pulvinar, vehicula diam eu, semper erat. Fusce eu laoreet nibh. Nullam tincidunt orci eu turpis iaculis, facilisis posuere dolor pretium. Mauris a libero porttitor, fermentum tortor eget, finibus est. Curabitur vel enim vitae ante accumsan auctor. Quisque quis diam sapien. Fusce ultrices malesuada diam, ac bibendum ante viverra ac. Morbi rutrum neque vel semper blandit. Mauris pulvinar nulla metus, et interdum lorem pretium sit amet. Nam vehicula odio elit, at rutrum ex gravida eget. Etiam feugiat a quam at tincidunt. Suspendisse hendrerit nulla sit amet nisi dapibus gravida.

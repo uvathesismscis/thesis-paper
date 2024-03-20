@@ -54,5 +54,11 @@
       ],
       "env": {}
     },
+  ],
+  "grammarly.selectors": [
+    {
+      "language": "latex",
+      "scheme": "file"
+    }
   ]
 }

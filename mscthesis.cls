@@ -334,7 +334,7 @@
             \begin{center}
             \begin{tabular}{|l||ll|}
             \hline
-            {}                      & \textbf{UvA Supervisor}  & \textbf{External Supervisor}         \\   
+            {}                      & \textbf{UvA Supervisor}  & \textbf{UvA Examiner}         \\   
             \hline
             \textbf{Title, Name}    & \@uvassupervisorname         & \@externalsupervisorname         \\
             \textbf{Affiliation}    & \@uvassupervisoraffiliation  & \@externalsupervisoraffiliation  \\ 

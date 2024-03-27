@@ -5,12 +5,16 @@ To answer the research question this study uses a human-centered approach common
 
 \subsection{Case study building}
 
-This study will be conducted in association with the Digital Interactions Lab \footnote{https://uva-dilab.com/} and will utilize the recently opened Lab42 \footnote{https://lab42.uva.nl/} building at the UvA Amsterdam Science Park \footnote{https://www.amsterdamsciencepark.nl/} as its primary case study location. Lab42 is an energy-neutral, flexible, and adaptable faculty building that facilitates collaborations among students, researchers, and businesses \cite{benthem_2022}. The buildings's layout is strategically organized into different zones, each serving various functions, ranging from quiet individual work to spaces that allow for collaborative work. Lecture halls, learning rooms, and open learning spaces make up the two lower floors, with the upper four being primarily assigned to the university academic staff, meeting rooms, and external offices (see Appendix \ref{appendix:building}). The overarching interior theme in the design revolves around 'tech' and 'nature' aiming to cultivate a fresh, light, and warm comfortable ambiance. Lab42 is an example of a smart building or living lab where sensing devices are retrofitted throughout the building to automatically adjust lighting, temperature, and the focus of this research regulating air \cite{architects_lab42_2022}. This already provides a base of environmental data that can be used and extended for further analysis. Since most of the space within the building is designated as informal learning space and another large part of the building is designed as meeting rooms (see Appendix \ref{appendix:building}), working areas these functions of focussed work and collaborative meetings can be heavily influenced by reduced cognitive performance as a result of poor indoor air quality.
+This study will be conducted in association with the Digital Interactions Lab \footnote{https://uva-dilab.com/} and will utilize the recently opened Lab42 \footnote{https://lab42.uva.nl/} building at the UvA Amsterdam Science Park \footnote{https://www.amsterdamsciencepark.nl/} as its primary case study location. Lab42 is an energy-neutral, flexible, and adaptable faculty building that facilitates collaborations among students, researchers, and businesses \cite{benthem_2022}. 
+
+\subsubsection{Space usage}
+
+The buildings's layout is strategically organized into different zones, each serving various functions, ranging from quiet individual work to spaces that allow for collaborative work. Lecture halls, learning rooms, and open learning spaces make up the two lower floors, with the upper four being primarily assigned to the university academic staff, meeting rooms, and external offices (see Appendix \ref{appendix:building}).The overarching interior theme in the design revolves around 'tech' and 'nature' aiming to cultivate a fresh, light, and warm comfortable ambiance. Lab42 is an example of a smart building or living lab where sensing devices are retrofitted throughout the building to automatically adjust lighting, temperature, and the focus of this research regulating air \cite{architects_lab42_2022}. This already provides a base of environmental data that can be used and extended for further analysis. Since most of the space within the building is designated as informal learning space and another large part of the building is designed as meeting rooms (see Appendix \ref{appendix:building}), working areas these functions of focussed work and collaborative meetings can be heavily influenced by reduced cognitive performance as a result of poor indoor air quality.
 
 \subsection{Questionnaire survey}
 \label{sec:questionnaire}
 
-To understand and collect occupants' subjective awareness and satisfaction of IAQ  a survey was created to gather quantitative data within the building as a form of Post Occupancy Evaluation (POE) (see Appendix \ref{appendix:building}). 
+To understand and collect occupants' subjective awareness and satisfaction of IAQ  a survey was created to gather quantitative data within the building as a form of Post Occupancy Evaluation (POE) (see Appendix \ref{appendix:building}).
 
 
 \subsubsection{Questions}
@@ -32,15 +36,11 @@ After the distribution of the survey completed analysis of the collected data wa
 
 \subsection{Air Quality Monitoring}
 
-To gather data about the current situation of air quality within the building and understand the current situation within the building in terms of air quality data we retrofitted IAQ monitors  (see Appendix \ref{appendix:building}) to two specific meeting rooms within the building.
+To gather data about the current situation of air quality within the building and understand the current situation within the building in terms of air quality data we retrofitted IAQ monitors (see Appendix \ref{appendix:building}) to two specific meeting rooms within the building.  This data collected was further used to inform and acts as a basis for the design of the data physicalisation (see \ref{sec:questionnaire} ).
 
 \subsubsection{Technical set-up}
 
 We deployed the monitors in meeting rooms occupants regularly use which allowed to understand occupants behavior and perception under real-world corporate settings as opposed to a controlled lab setting. We refer to them as the small room (room A) and the large room (room B). The small room’s is XX m2, and commonly used for small-size meetings (seven seats), while the large room’s ones is XX m2 (fourteen seats), which is more preferable for hosting larger-size meetings and seminars. Two commercially available indoor climate data loggers were installed using 3D printed mounting plates, a AirCheq Touch Aero \footnote{https://airteq.eu/producten/touch-aero/} in the smaller room and a Atal ATU-CT ClimaTrend \footnote{https://www.atal.nl/atu-ct-climatrend-binnenklimaat-datalogger} in the larger room. Both monitors use industry-standard (e.g. Senseirion and SenseAir) sensors to measure common pollutants and were mounted (e.g. between 80cm and 120cm from the ground) and calibrated (e.g. intervals, polling rates) as described by both manufacters installation manuals.
-
-\subsubsection{Data logs}
-
-The data gathered by the sensors provides insights into various standardized measurements related to common pollutants that affect IAQ such as molds and allergens (humidity), volatile organic compounds (VOC), and carbon dioxide (CO2) (see Table \ref{tab:air-quality}). We cross-referenced the data logs with two weekly schedules based on the internal booking systems of the rooms based on the timestamped data to align the values of the sensors from the data logs when meetings were scheduled.
 
 \begin{table}[htbp]
     \centering
@@ -59,37 +59,56 @@ The data gathered by the sensors provides insights into various standardized mea
 
 \subsubsection{Data analysis}
 
+\subsubsection{Data logs}
+
+The data gathered by the sensors provides insights into various standardized measurements related to common pollutants that affect IAQ such as molds and allergens (humidity), volatile organic compounds (VOC), and carbon dioxide (CO2) (see Table \ref{tab:air-quality}). We cross-referenced the data logs with two weekly schedules based on the internal booking systems of the rooms based on the timestamped data to align the values of the sensors from the data logs when meetings were scheduled.
+
+
+
 Is performed similary as described in section \ref{sec:analysis} were data was cleaned to remove data from mainly non-opening hours and plotted and visualizated to visually explore patterns in the data and cross-reference them with meeting times.
 
 
-\subsection{Ideation}
+\subsection{Ideation and user requirements}
+
+As a starting point for creating a physical reprentation of the air quality data we base our research on the growing interest in establishing theoretical and design foundations for data physicalisation \cite{hornecker_design_2023, sauve_physecology_2022, bae_making_2022} and how to encode their properties and define a common design language \cite{ranasinghe_encoding_2023}.
 
 List a library of over 300 data physicalizations. Two state of the art papers do systematic reviews of physicalization with a combined examples of around 64 projects of which both academic ($f$=34) and non-academic ($f$=17) samples. With around three ($f$=3) projects (PhysiKit, other, other \cite{sauve_physecology_2022}) extensively studied and reviewed for this research which focus in some form or way on airflow and air quality
 
-\subsubsection{Methods}
+Picked ideation and concepthing methods from the CMD Methods Pack \cite{}.
 
-Write about sketching, concepting methods etc.
-
-\subsubsection{User requirements}
+\subsubsection{Design philosophy}
 
 Minimize interuption cost, notion of calm technology, ideal situation use persuasive techniques to help them take preventive actions.
 
-\subsubsection{Phsycalization properties}
+\subsubsection{Data representation}
 
-Write about how the end results fits within the properties of the physicalization research (real-time, audience)
+Write about data scale (stevens) nominal, ordinal and numerical. Needs electronic components (e.g. microcontrollers, sensors) and non-electronic components.
 
-\subsection{Prototype}
+\subsubsection{Audience}
 
-Based on the ideation and exploratory prototyping a final version of the prototype was created.
+\subsubsection{Intention}
 
-\subsubsection{System Design}
+\subsubsection{Interaction}
 
-Write about software hardware etc.
+\subsubsection{Concepts}
 
-\subsubsection{System Architecture}
+Three lo-fi concepts were further elaborated (see Figure \ref{fig:complexity}) in order to choose one to create in hi-fidelity for the user studies and evaluation. Concept selection was based on weighted physicalization criteria and expert reviews ($N$=4) criteria. Also technical limitations of the provided hardware were a chosing criteria (real-time data, cost of hardware, availability of electronic components).
 
-Write about layers and edge computing.
-
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{complexity_diagram_indoor_air_quality.png}
+    \caption{Development of the concepts and sketches}
+    \label{fig:complexity}
+\end{figure}
 
 \subsection{Evaluation}
+
+The prototype was evaluated using common performance-related criteria that are widely used in HCI/Information Visualisation were also used to evaluate the data physicalization prototype \cite{ranasinghe_encoding_2023}. We employed a field-based evaluation approach with accompanying methods based on the Ideo Design Kit \cite{} and Delft Design Guide \cite{}.
+
+\subsubsection{Semi-structured interviews}
+
+Performed semi-structured interviews with self-developed questionnaires.
+
+\subsubsection{Live user observation}
+
+Performed a field trial by observing users in the meeting rooms and interacting with the prototype think aloud.

@@ -153,24 +153,30 @@ Concept selection was based on weighted physicalization criteria from the litera
 
 Based on the requirements, data physcalization desgin principles and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution and utilised in the user study for evaluation.
 
+
+
+\subsubsection{Concept description}
+
+\textit{Bluebird} (see Figure \ref{fig:complexity}) is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hang from the ceiling in small to medium rooms (xM2) and changes based on real-time air quality monitor data. Strings (plant branches) either become lengtheir or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement.
+
+\subsubsection{Electronics and components}
+
+A controller device running on a Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with a MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with fishing line simulating the growth of the hanging planter and so that the string can be moved up and down.
+
+
+\subsubsection{Crafting technologies and materials}
+The strings, leaves and housings of the electronics and mechanical hardware are created using additive manufacturing (3D Printing) using a Fused deposition Modeling (FDM) technique using Polylactic acid (PLA) plastic filament in various colors. The electronics enclosures and plant models were modeled using computer-aided design (CAD) software. A digital fabrication technique commonly found in data physcalization prototypes \cite{anhalt_university_germany_design_2022}. To create leaves representing textile or fabric custom properties were defined withing the 3D printing software (Slicing) to remove top and bottom layers and create a thin layer of infill.
+
+\subsubsection{System Architecture and software}
+
+The microcontroller uses custom firmware written in Arduino code \footnote{https://www.arduino.cc/reference/en/} (similar to C++) that receives real-time data from the air quality monitors using the LoRaWAN \footnote{https://lora-alliance.org/about-lorawan/} communication protocol to control the mechanics of the prototype. This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}.
+
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.5\textwidth]{complexity_diagram_indoor_air_quality.png}
     \caption{Complexity diagram providing an overview of the effects of IAQ and needs of occupants \cite{schweizer_indoor_2007, wang_how_2021, kim_analyzing_2019, alavi_comfort_2017, corlan_importance_2021, klepeis_national_2001}}
     \label{fig:complexity}
 \end{figure}
-
-\subsubsection{Concept description}
-
-\textit{Bluebird} is a hanging sculpture inspired by nature and hanging planters that encodes the environmental properties of indoor air quality data. It is meant to be hang from the ceiling in small to medium rooms (xM2) and changes based on real-time air quality monitor data. Strings (plant branches) either become lengtheir or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement.
-
-\subsubsection{Hardware design }
-
-About materials and crafting technologies (laser-cutting), 3d printing etc. Physical representation and materials.
-
-\subsubsection{System Architecture}
-
-Write about software etc. (lorawan, ) Write about layers and edge computing. 
 
 \subsection{Evaluation}
 
@@ -199,7 +205,7 @@ The sample size of evaluation interviews was 8 ($n$=8) and accepted because the 
     \item The participant needed to work within the case study week a minimum of 3 days per week
 \end{enumerate}
 
-This resulted in a sample of X male, X female, consisting of various roles; from researchers from different labs, PhD candidates working at the labs to private company employees encompassing a range (youngest 27, oldest 55) of ages and education levels.
+This resulted in a sample of X male, X female, consisting of various roles; from researchers from different labs, PhD candidates working at the labs to private company employees encompassing a range of ages (min=X, max=X, Mdn=X, IQR=X) and education levels. Participants used the meetings rooms on average X (min=X, max=X, Mdn=X, IQR=X) a week and worked within the lab42 building X (min=X, max=X, Mdn=X, IQR=X) a week.
 
 \subsubsection{Semi-structured interviews}
 

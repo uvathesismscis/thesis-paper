@@ -34,6 +34,29 @@ The survey was distributed via handouts with QR Codes using eligibility criteria
 \label{sec:analysis}
 After the distribution of the survey completed analysis of the collected data was performed in the form of data cleanup and exploratory data visualization. In Python (Jupyter Notebook format) \footnote{https://jupyter.org/} Libraries such as Numpy \footnote{https://pandas.pydata.org/} were used to clean the data (e.g. remove non-consenting users) and visualization libraries such as Seaborn \footnote{https://seaborn.pydata.org/} were used to create graphs and plots (e.g. boxplot the likert-scales) to get an overview of the collected data and gain insight into understanding the occupants.
 
+\begin{figure*}[!t]
+    \centering
+    \begin{subfigure}[b]{0.23\textwidth}
+        \includegraphics[width=\textwidth]{building.png}
+        \caption{Figure 1}
+        \label{fig:1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.23\textwidth}
+        \includegraphics[width=\textwidth]{building.png}
+        \caption{Figure 2}
+        \label{fig:2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth, height=0.38\textwidth]{building.png}
+        \caption{Figures 3 and 4 combined}
+        \label{fig:3_4_combined}
+    \end{subfigure}
+    \caption{Impressions of the ideations and prototyping phase}
+    \label{fig:full_width}
+\end{figure*}
+
 \subsection{Air Quality Monitoring}
 
 To gather data about the current situation of air quality within the building and understand the current situation within the building in terms of air quality data we retrofitted IAQ monitors (see Appendix \ref{appendix:building}) to two specific meeting rooms within the building.  This data collected was further used to inform and acts as a basis for the design of the data physicalisation (see \ref{sec:questionnaire} ).
@@ -102,41 +125,44 @@ Based on this scope and the survey we describe the user requirements ("UR" for "
     \item Users should be able to create, update, and delete their profiles.
 \end{enumerate}
 
-\begin{figure*}[!t]
-    \centering
-    \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{building.png}
-        \caption{Figure 1}
-        \label{fig:1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{building.png}
-        \caption{Figure 2}
-        \label{fig:2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth, height=0.38\textwidth]{building.png}
-        \caption{Figures 3 and 4 combined}
-        \label{fig:3_4_combined}
-    \end{subfigure}
-    \caption{Impressions of the ideations and prototyping phase}
-    \label{fig:full_width}
-\end{figure*}
-
 \subsubsection{Concept models}
 
 For the concept models two existing datasets were used as a starting point for brainstorming and inspiration. First was the DataPhys gallery \footnote{http://dataphys.org/list/gallery/}, a collection of 372 entries classified as data physicalizations. The second was a combination of three state of the art papers with systematic reviews of physicalization with a combined examples of around 132 entries classified as data physicalization of which both academic and non-academic samples. Out of these twelve ($f$=12) entries (($f$=8) academic, ($f$=4)) were selected for further review based on the similitary and aligment with the  before described dimensions of which three ($f$=3) projects (Physikit, other, other)with a focus on the environmental property of air (but not necessarily air quality within indoor environments). Additionally 
 
-\subsubsection{Lo-fi prototypes}
+\subsubsection{Concept diagrams}
 
-Based on the user requirements and ideation and concepting  from the Communication and Multimedia Design (CMD) Methods Pack \footnote{https://cmdmethods.nl/} and Design Method Toolkit \footnote{https://toolkits.dss.cloud/design/} by the Digital Society School (DSS) three lo-fi concepts were further elaborated (see Figure \ref{fig:complexity}) in order to choose one to create in hi-fidelity for the user studies and evaluation. Concept selection was based on weighted physicalization criteria and expert reviews ($N$=4) criteria. Also technical limitations of the provided hardware were a chosing criteria (real-time data, cost of hardware, availability of electronic components).
+Based on the user requirements and ideation and concepting from the Communication and Multimedia Design (CMD) Methods Pack \footnote{https://cmdmethods.nl/} and Design Method Toolkit \footnote{https://toolkits.dss.cloud/design/} by the Digital Society School (DSS) three low fidelity (lo-fi) concepts were further elaborated (see Figure \ref{fig:complexity}) in order to choose one to create for the user studies and evaluation. 
+
+
+\begin{enumerate}
+  \item \textbf{Concept-1: Desk Planter (Aspen)}
+      A desk planter or tree in the corner of the room with soil in it.Follows the organic growth of a 'seed' of a flower or tree from seed to sprouts to full flower. The better the air quality the more or faster the plant grows. Movement of the leaves can indicate the wind.
+
+  \item \textbf{Concept-2: Hanging Sculpture (Bluebird)}
+      A hanging planter type set-up with strings that 'grow' from the ceiling. Fresh air makes movement of the strings. People can walk by, feel the material (e.g. humidity). Can touch, allows most interactivity. Taking inspiration from kinetic sculptures and hanging / floating sculptures.
+
+  \item \textbf{Concept-3: Wall Kinetic (Crocus)}
+      A moss-like structure on the wall with flower bulbs embedded. The flowers 'open up' based on better fresh air. Taking inspiration from kinetic sculptures.
+\end{enumerate}
+
+
+Concept selection was based on weighted physicalization criteria from the literature, a harris profile  and expert reviews ($N$=4) feedback. Also technical limitations of the provided hardware (e.g. real-time data output of monitors, cost of hardware, availability of electronic components,) and limitations in the technical set-up of the building (e.g. space in the meeting rooms, not allowed to alter furniture) were choosing criteria. Based on aggregration of these criteria the \textit{Bluebird} concept was chosen to be further developed into a high-fidelity prototype.
 
 
 \subsection{Prototype}
 
-Based on the ideation and exploratory prototyping a final version of the prototype was created.
+Based on the requirements, data physcalization desgin principles and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution and utilised in the user study for evaluation.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{complexity_diagram_indoor_air_quality.png}
+    \caption{Complexity diagram providing an overview of the effects of IAQ and needs of occupants \cite{schweizer_indoor_2007, wang_how_2021, kim_analyzing_2019, alavi_comfort_2017, corlan_importance_2021, klepeis_national_2001}}
+    \label{fig:complexity}
+\end{figure}
+
+\subsubsection{Concept description}
+
+\textit{Bluebird} is a hanging sculpture inspired by nature and hanging planters that encodes the environmental properties of indoor air quality data. It is meant to be hang from the ceiling in small to medium rooms (xM2) and changes based on real-time air quality monitor data. Strings (plant branches) either become lengtheir or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement.
 
 \subsubsection{Hardware design }
 
@@ -148,7 +174,7 @@ Write about software etc. (lorawan, ) Write about layers and edge computing.
 
 \subsection{Evaluation}
 
-The prototype was evaluated using common performance-related criteria that are widely used in HCI/Information Visualisation were also used to evaluate the data physicalization prototype \cite{ranasinghe_encoding_2023}. We employed a field-based evaluation approach with accompanying methods (see Section \ref{sec:questionnaire}) based on the Human-centered Design Kit by Ideo \footnote{https://www.designkit.org/methods.html} and Delft Design Guide from the Delft University of Technology (TU) \footnote{https://www.bispublishers.com/delft-design-guide-revised.html}.  For evaluation criteria we used the intentions described in \cite{ranasinghe_encoding_2023} and interview methodology similar to \cite{jansen_evaluating_2013} as a baseline for evaluating the efficiency, memorability in in-person evaluation sessions. To measure the overall effectiveness and usability of the physicalization we used an adoptation of the Technology Acceptance Model (TAM) to gather insight into perceived usefulness, attitutde towards using and system usability scale \cite{}. 
+The prototype was evaluated using common performance-related criteria that are widely used in HCI/Information Visualisation \cite{ranasinghe_encoding_2023} and Grounded Theory studies \cite{chun_tie_grounded_2019}. We employed a field-based evaluation approach with accompanying methods (see Section \ref{sec:questionnaire}) based on the Human-centered Design Kit by Ideo \footnote{https://www.designkit.org/methods.html} and Delft Design Guide from the Delft University of Technology (TU) \footnote{https://www.bispublishers.com/delft-design-guide-revised.html}. For evaluation criteria we used the intentions described in \cite{ranasinghe_encoding_2023} and interview methodology similar to \cite{jansen_evaluating_2013} as a baseline for evaluating the efficiency, memorability in in-person evaluation sessions. To measure the overall effectiveness and usability of the physicalization we used an adoptation of the Technology Acceptance Model (TAM) to gather insight into perceived usefulness, attitutde towards using and system usability scale \cite{}. 
 
 \subsubsection{Hypothesis elicitation}
 
@@ -165,31 +191,27 @@ On the basis of the research question and creation of the prototype four hypothe
 
 \subsubsection{Participant sampling}
 
-We used a minimum sample size of 5 for qualitative studies The sample size of 5 was accepted because the study findings reached saturation, meaning that new interviews did not yield new insights. Participants were gathered through purposive sampling, as respondents had to meet the inclusion criteria ("C" for "Criteria") that needed to be checked before the interviews: 
+The sample size of evaluation interviews was 8 ($n$=8) and accepted because the study findings reached saturation, meaning that new interviews did not yield new insights after the first five interviews. Participants were gathered through purposive sampling, as respondents had to meet the inclusion criteria ("C" for "Criteria") that needed to be checked before the interviews: 
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{C\arabic{enumi}:}
-    \item The system should provide a user-friendly interface.
-    \item Users should be able to register for an account with a valid email address.
-    \item Upon registration, users should receive a confirmation email.
-    \item The system should allow users to log in securely using their credentials.
-    \item Users should be able to create, update, and delete their profiles.
+    \item The participant needed to use a meeting room with the building a minimum of once a week
+    \item The participant needed to work within the case study week a minimum of 3 days per week
 \end{enumerate}
 
+This resulted in a sample of X male, X female, consisting of various roles; from researchers from different labs, PhD candidates working at the labs to private company employees encompassing a range (youngest 27, oldest 55) of ages and education levels.
 
 \subsubsection{Semi-structured interviews}
 
-Performed semi-structured interviews with self-developed questionnaires. The goal was to evaluate the efficiency and memorability of the prototype.
+Within the meeting-room lab set-up in the presence of the developed prototyped pre-arranged, semi-structured individual qualitative interviews were conducted with open-ended and nonleading questions (see Appendix \ref{appendix:building}). The goal was to gather first impressions and gain insight into how occupants understand the communicated data factors of the prototype.
 
+\subsubsection{Participant observation}
 
-\subsubsection{Live user observation}
-
-Performed a field trial by observing users in the meeting rooms and interacting with the prototype think aloud. The goal was to test the usability of the prototype.
+After the explorative questions participants were encouraged to in more detail view the prototype and interact with it as a field trial stating anything they noticed. Participants behavior was observed within the meeting rooms and participants were encouraged to think aloud when viewing and interacting with the prototype (see Appendix \ref{appendix:building}). Informal leading questions were asked about improvements, design optimizalization and visual changes. The goal was to test the usability of the prototype and gather insight into the self-reflective properties of the prototype. 
 
 \subsubsection{Effectiveness of the prototype}
 
-TAM scores, effectiveness scores
+After the interviews and observations, the participants were asked to fill in a digital online with structured pre-defined questions form rating several properties of the prototype for their effectiveness (see Appendix \ref{appendix:building}). The goal was to gather quantitative measurements about the usability and effectiveness of the prototype.
 
-
-\subsubsection{Coding}
-Interviews where transcribed, processed via Atlas.ti. Axial coding. Describe how interviews were performed, how they were translated.
+\subsubsection{Transcription and coding}
+All interviews were anonomyzed and conducted in-person on-site and audio recorded with permission of the participants. The recordings were then verbatim transcribed using the build-in Microsoft 365 transcription tool \footnote{https://www.microsoft.com/nl-nl/microsoft-365} to avoid bias while note-taking. The transcribed interviews as textual data was processed via Atlas.ti \footnote{https://atlasti.com/} for qualitative coding.

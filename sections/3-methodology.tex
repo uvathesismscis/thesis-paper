@@ -1,7 +1,9 @@
 \section{Methodology}
 \label{sec:methodology}
 
-To answer the research question this study uses a human-centered approach (often referred to as Design Thinking) commonly found in Human-Computer Interaction studies consisting of four phases; 1) user studies to \textit{understand} the user, 2) \textit{data collection} methods and analysis of the situation as field trials, 3) \textit{ideation} and experimental design of a prototype and 4) \textit{evaluation} and usability testing of the prototype \cite{jonathan_lazar_research_2017, zimmerman_research_2007}. This mixed-methods approach (both qualitative and quantitative)  helps understand occupants' needs and informs the design and technical set-up of the prototype evaluating the effectiveness by focusing on the user's needs from the start of the study \cite{rogers_moving_2017}. For the first phase, an online questionnaire was conducted to \textit{understand} occupants' awareness of indoor air quality (see Section \ref{sec:questionnaire}), for the second phase a lab setting was created with IAQ monitors to do \textit{data collection} and gain insight into environmental data which in turn informed phase three the \textit{ideation} and creation of the prototype. In the last phase participants \textit{evaluated} the prototype and performed usability tests.
+To answer the research question this study uses a human-centered approach (often referred to as Design Thinking) commonly found in Human-Computer Interaction studies consisting of four phases; 1) user studies to \textit{understand} the user, 2) \textit{data collection} methods and analysis of the situation as field trials, 3) \textit{ideation} and experimental design of a prototype and 4) \textit{evaluation} and usability testing of the prototype \cite{jonathan_lazar_research_2017, zimmerman_research_2007}. This mixed-methods approach (both qualitative and quantitative)  helps understand occupants' needs and informs the design and technical set-up of the prototype evaluating the effectiveness by focusing on the user's needs from the start of the study \cite{rogers_moving_2017}. 
+
+For the first phase, an online questionnaire was conducted to \textit{understand} occupants' awareness of indoor air quality (see Section \ref{sec:questionnaire}), for the second phase a lab setting was created with IAQ monitors to do \textit{data collection} and gain insight into environmental data which in turn informed phase three the \textit{ideation} and creation of the prototype. In the last phase participants \textit{evaluated} the prototype and performed usability tests. The concepts of indoor air quality monitoring and data physicalization were investigated through literature review and desk research before setting up the survey, creating the prototype, and conducting the evaluation interviews.
 
 \subsection{Case study building}
 
@@ -28,9 +30,9 @@ The questions were based on two POE studies with a focus on indoor air quality \
 
 
 \subsubsection{Participants}
-The survey was distributed via handouts with QR Codes using eligibility criteria based on demographic characteristics to occupants present at the informal learning spaces of the atrium, first floor, and second floor. There were no additional inclusion criteria besides the sample size of respondents being present in the case study building. Additionally, handouts were attached to the tables using stickers. All instances of participation were voluntary and conducted without remuneration. Distribution of the survey was open for participation for four weeks within the Lab42 building which recorded XX ($n$=XX) responses in total of which after cleanup a total of XX ($n$=XX) responses were included in the final dataset. On average, participants used the Lab42 building 3 times a week for various activities (min=1d, max=5d, Mdn=3d) and most occupants from the sample size were located on the ground floor (($f$=8)) as opposed to the first floor (($f$=34)) and 2th floor (($f$=34)). No personal identifiable information such as age and gender were collected during the survey and ethical considerations (e.g. consent forms) were taken into consideration (see Appendix \ref{appendix:building}).
+The survey was distributed via handouts with QR Codes using eligibility criteria based on demographic characteristics to occupants present at the informal learning spaces of the atrium, first floor, and second floor. There were no additional inclusion criteria besides the sample size of respondents being present in the case study building. Additionally, handouts were attached to the tables using stickers. All instances of participation were voluntary and conducted without remuneration. Distribution of the survey was open for participation for four weeks within the Lab42 building which recorded XX ($n$=XX) responses in total of which after cleanup a total of XX ($n$=XX) responses were included in the final dataset. On average, participants used the Lab42 building 3 times a week for various activities (min=1d, max=5d, Mdn=3d) and most occupants from the sample size were located on the ground floor (($f$=8)) as opposed to the first floor (($f$=34)) and 2th floor (($f$=34)). No personal identifiable information such as age and gender were collected during the survey and ethical considerations (e.g. consent forms) were taken into consideration. In order to improve the quality of the questionnaire on the initial version feedback was requested, after which the survey protocol was piloted, before distributing to participants (see Appendix \ref{appendix:building}).
 
-\subsubsection{Data analysis}
+\subsubsection{Data cleaning, preprocessing and analysis}
 \label{sec:analysis}
 After the distribution of the survey completed analysis of the collected data was performed in the form of data cleanup and exploratory data visualization. In Python (Jupyter Notebook format) \footnote{https://jupyter.org/} Libraries such as Numpy \footnote{https://pandas.pydata.org/} were used to clean the data (e.g. remove non-consenting users) and visualization libraries such as Seaborn \footnote{https://seaborn.pydata.org/} were used to create graphs and plots (e.g. boxplot the likert-scales) to get an overview of the collected data and gain insight into understanding the occupants.
 
@@ -96,7 +98,7 @@ As a starting point for creating a physical representation of the air quality da
 a data-driven physical artifact whose geometry and material properties encode data that aims to augment a nearby audience’s understanding of data insights.
 \end{quote}
 
-Before prototyping the design solution we first describe the  intentions and scope of the physicalization. We derived five relevant dimensions based on the literature; \textit{audience, intention, interaction, philosophy, representation} \cite{sauve_physecology_2022, hornecker_design_2023}.
+Before prototyping the design solution we first describe the overall requirements and scope of the physicalization and case studies used for ideation. The final prototype is described in Section \ref{sec:methodology} based on the encoded variables found in the literature. 
 
 \subsubsection{Design philosophy}
 
@@ -106,15 +108,9 @@ Minimize interuption cost, notion of calm technology, ideal situation use persua
 
 Write about data scale (stevens) nominal, ordinal and numerical. Needs electronic components (e.g. microcontrollers, sensors) and non-electronic components.
 
-\subsubsection{Audience}
-
-\subsubsection{Intention}
-
-\subsubsection{Interaction}
-
 \subsubsection{User requirements}
 
-Based on this scope and the survey we describe the user requirements ("UR" for "User Requirements") of the design solution in further detail in the form of requirements, in user story format, ranked based on the MoSCoW method:
+Based on this scope and the survey we describe the user requirements ("ur" for "user requirements") of the design solution in further detail in the form of requirements, in user story format, ranked based on the MoSCoW method:
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{UR\arabic{enumi}:}
@@ -127,7 +123,7 @@ Based on this scope and the survey we describe the user requirements ("UR" for "
 
 \subsubsection{Concept models}
 
-For the concept models two existing datasets were used as a starting point for brainstorming and inspiration. First was the DataPhys gallery \footnote{http://dataphys.org/list/gallery/}, a collection of 372 entries classified as data physicalizations. The second was a combination of three state of the art papers with systematic reviews of physicalization with a combined examples of around 132 entries classified as data physicalization of which both academic and non-academic samples. Out of these twelve ($f$=12) entries (($f$=8) academic, ($f$=4)) were selected for further review based on the similitary and aligment with the  before described dimensions of which three ($f$=3) projects (Physikit, other, other)with a focus on the environmental property of air (but not necessarily air quality within indoor environments). Additionally 
+For the concept models, two existing datasets of academic and non-academic case studies were used as comparetive studies, desk research and as a starting point for ideation. First was the DataPhys gallery \footnote{http://dataphys.org/list/gallery/}, a collection of 372 entries classified as data physicalizations. The second was a combination of three state of the art papers with systematic reviews of physicalization with a combined examples of around 132 entries classified as data physicalization of which both academic and non-academic samples. Out of these twelve ($f$=12) entries (($f$=8) academic, ($f$=4)) were selected for further review based on the similitary and aligment with the  before described dimensions of which three ($f$=3) projects (Physikit, other, other)with a focus on the environmental property of air (but not necessarily air quality within indoor environments). Additionally 
 
 \subsubsection{Concept diagrams}
 
@@ -151,7 +147,7 @@ Concept selection was based on weighted physicalization criteria from the litera
 
 \subsection{Prototype}
 
-Based on the requirements, data physcalization desgin principles and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution and utilised in the user study for evaluation.
+Based on the requirements, data physcalization desgin principles and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution as a feasability study and utilized in the user study for evaluation.
 
 
 
@@ -184,7 +180,7 @@ The prototype was evaluated using common performance-related criteria that are w
 
 \subsubsection{Hypothesis elicitation}
 
-On the basis of the research question and creation of the prototype four hypothesis ("H" for "Hypothesis") were formulated to evaluate on.
+On the basis of the research question and creation of the prototype four hypothesis ("h" for "hypothesis") were formulated to evaluate on as a observational study:
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{H\arabic{enumi}:}
@@ -197,7 +193,7 @@ On the basis of the research question and creation of the prototype four hypothe
 
 \subsubsection{Participant sampling}
 
-The sample size of evaluation interviews was 8 ($n$=8) and accepted because the study findings reached saturation, meaning that new interviews did not yield new insights after the first five interviews. Participants were gathered through purposive sampling, as respondents had to meet the inclusion criteria ("C" for "Criteria") that needed to be checked before the interviews: 
+The sample size of evaluation interviews was eight ($n$=8) and accepted because the study findings reached theoretical saturation, new interviews did not yield new insights after the first five interviews. Participants were gathered through purposive sampling, as respondents had to meet the inclusion criteria ("c" for "criteria") that needed to be checked before the interviews: 
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{C\arabic{enumi}:}
@@ -209,11 +205,12 @@ This resulted in a sample of X male, X female, consisting of various roles; from
 
 \subsubsection{Semi-structured interviews}
 
-Within the meeting-room lab set-up in the presence of the developed prototyped pre-arranged, semi-structured individual qualitative interviews were conducted with open-ended and nonleading questions (see Appendix \ref{appendix:building}). The goal was to gather first impressions and gain insight into how occupants understand the communicated data factors of the prototype.
+Within the meeting-room lab set-up in the presence of the developed prototyped pre-arranged, semi-structured individual qualitative interviews were conducted with open-ended and nonleading questions with additional in-depth questions on topics emerging from the
+dialogue (see Appendix \ref{appendix: building}). In order to improve the quality of the interviews (and evaluation session in general) on the initial version feedback was requested, after which the interview protocol was piloted, before continuing with participants (see Appendix \ref{appendix:building}). The goal was to gather first impressions and gain insight into how occupants understand the communicated data factors of the prototype.
 
 \subsubsection{Participant observation}
 
-After the explorative questions participants were encouraged to in more detail view the prototype and interact with it as a field trial stating anything they noticed. Participants behavior was observed within the meeting rooms and participants were encouraged to think aloud when viewing and interacting with the prototype (see Appendix \ref{appendix:building}). Informal leading questions were asked about improvements, design optimizalization and visual changes. The goal was to test the usability of the prototype and gather insight into the self-reflective properties of the prototype. 
+After the explorative questions participants were encouraged to in more detail view the prototype and interact with it as a field trial stating anything they noticed. Participants behavior was observed within the meeting rooms and participants were encouraged to think aloud when viewing and interacting with the prototype (see Appendix \ref{appendix:building}) . Informal leading questions were asked about improvements, design optimizalization and visual changes. In this manner, insights into particular interaction elements were acquired without the explicit involement of HCI specialists. The goal was to test the usability of the prototype and gather insight into the self-reflective properties of the prototype. 
 
 \subsubsection{Effectiveness of the prototype}
 

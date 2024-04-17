@@ -39,20 +39,20 @@ After the distribution of the survey completed analysis of the collected data wa
 \begin{figure*}[!t]
     \centering
     \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{building.png}
-        \caption{Figure 1}
+        \includegraphics[width=\textwidth]{placeholder.jpg}
+        \caption{Placeholder caption}
         \label{fig:1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{building.png}
-        \caption{Figure 2}
+        \includegraphics[width=\textwidth]{placeholder.jpg}
+        \caption{Placeholder caption}
         \label{fig:2}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth, height=0.38\textwidth]{building.png}
-        \caption{Figures 3 and 4 combined}
+        \includegraphics[width=\textwidth, height=0.46\textwidth]{placeholder-two.jpg}
+        \caption{Placeholder caption}
         \label{fig:3_4_combined}
     \end{subfigure}
     \caption{Impressions of the ideations and prototyping phase}
@@ -101,25 +101,18 @@ a data-driven physical artifact whose geometry and material properties encode da
 
 Before prototyping the design solution we first describe the overall requirements and scope of the physicalization and case studies used for ideation. The final prototype is described in (see \hyperref[sec:analysis]{Section \ref*{sec:analysis}}) based on the encoded variables found in the literature. 
 
-\subsubsection{Design philosophy}
+\subsubsection{Concept requirements}
 
-Minimize interuption cost, notion of calm technology, ideal situation use persuasive techniques to help them take preventive actions.
-
-\subsubsection{Data representation}
-
-Write about data scale (stevens) nominal, ordinal and numerical. Needs electronic components (e.g. microcontrollers, sensors) and non-electronic components.
-
-\subsubsection{User requirements}
-
-Based on this scope and the survey we describe the user requirements ("ur" for "user requirements") of the design solution in further detail in the form of requirements, in user story format, ranked based on the MoSCoW method:
+Based on this scope and the survey we describe the concept requirements ("r" for "requirements") of the design solution in further detail with six overarching requirements ranked based on the MoSCoW method:
 
 \begin{enumerate}
-    \renewcommand{\labelenumi}{UR\arabic{enumi}:}
-    \item The system should provide a user-friendly interface.
-    \item Users should be able to register for an account with a valid email address.
-    \item Upon registration, users should receive a confirmation email.
-    \item The system should allow users to log in securely using their credentials.
-    \item Users should be able to create, update, and delete their profiles.
+    \renewcommand{\labelenumi}{R\arabic{enumi}:}
+    \item \textbf{Visual Feedback:} The prototype must provide visual feedback through movement encoding environmental properties that represent air quality metrics, ensuring that users can easily interpret the information conveyed (must have).
+    \item \textbf{Size and location:} The prototype must be designed to be installed within small to medium-sized rooms, with consideration for its dimensions and weight to ensure compatibility (must have).
+    \item \textbf{Real-Time Data Integration:} The prototype should integrate real-time data from air quality monitors to dynamically adjust its behavior (should have).
+    \item \textbf{Interactive sensing:} The prototype should be interactive in which occupants can interact with the prototype by walking near it providing a tactile experience (should have).
+    \item \textbf{Material durability:} The prototype could use natural materials and be durable and resistant to environmental factors such as humidity and temperature fluctuations (could have).
+    \item \textbf{Aesthetic Integration:} The prototype could seamlessly integrate with its surrounding environment, complementing interior design aesthetics, architectural features, and layouts of the room to enhance the overall ambiance (could have).
 \end{enumerate}
 
 \subsubsection{Concept models}
@@ -154,7 +147,7 @@ Based on the requirements, data physcalization desgin principles and concept mod
 
 \subsubsection{Concept description}
 
-\textit{Bluebird} (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}) is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hang from the ceiling in small to medium rooms (xM2) and changes based on real-time air quality monitor data. Strings (plant branches) either become lengtheir or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement.
+\textit{Bluebird} (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}) is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hang from the ceiling in small to medium rooms (xM2) and changes based on real-time air quality monitor data. Strings (plant branches) either become lengtheir or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement. The overall design philosophy of the shapes and forms uses the notion of calm technology to minimze interuption cost \cite{case_calm_2016}. 
 
 \subsubsection{Electronics and components}
 
@@ -170,26 +163,24 @@ The microcontroller uses custom firmware written in Arduino code \footnote{https
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.5\textwidth]{complexity_diagram_indoor_air_quality.png}
+    \includegraphics[width=0.5\textwidth]{placeholder-two.jpg}
     \caption{Bluebird data physicalization prototype in the lab}
     \label{fig:complexity}
 \end{figure}
 
 \subsection{Evaluation}
 
-The prototype was evaluated as a case study using common performance-related criteria that are widely used in HCI/Information Visualisation \cite{ranasinghe_encoding_2023} and Grounded Theory studies \cite{chun_tie_grounded_2019}. We employed a field-based evaluation approach with accompanying methods (see \hyperref[sec:analysis]{Section \ref*{sec:analysis}}) based on the Human-centered Design Kit by Ideo \footnote{https://www.designkit.org/methods.html} and Delft Design Guide from the Delft University of Technology (TU) \footnote{https://www.bispublishers.com/delft-design-guide-revised.html}. For evaluation criteria we used the intentions described in \cite{ranasinghe_encoding_2023} and interview methodology similar to \cite{jansen_evaluating_2013} as a baseline for evaluating the efficiency, memorability in in-person evaluation sessions. To measure the overall effectiveness and usability of the physicalization we used an adoptation of the Technology Acceptance Model (TAM) to gather insight into perceived usefulness, attitutde towards using and system usability scale \cite{}. 
+The prototype was evaluated as a case study using common performance-related criteria that are widely used in HCI/Information Visualisation \cite{ranasinghe_encoding_2023} and Grounded Theory studies \cite{chun_tie_grounded_2019}. We employed a field-based evaluation approach with accompanying methods (see \hyperref[sec:analysis]{Section \ref*{sec:analysis}}) based on the Human-centered Design Kit by Ideo \footnote{https://www.designkit.org/methods.html} and Delft Design Guide from the Delft University of Technology (TU) \footnote{https://www.bispublishers.com/delft-design-guide-revised.html}. For evaluation criteria we used the intentions described in \cite{ranasinghe_encoding_2023} and interview methodology similar to \cite{jansen_evaluating_2013} as a baseline for evaluating the efficiency, memorability in in-person evaluation sessions. To measure the overall effectiveness and usability of the physicalization we used an adoptation of the Technology Acceptance Model (TAM) to gather insight into perceived usefulness, attitutde towards using and system usability scale \cite{davis_perceived_1989}. 
 
 \subsubsection{Hypothesis elicitation}
 
-On the basis of the research question and creation of the prototype four hypothesis ("h" for "hypothesis") were formulated to evaluate on as a observational study:
+On the basis of the research question and creation of the prototype three hypothesis ("h" for "hypothesis") were formulated to evaluate on as a observational study:
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{H\arabic{enumi}:}
-    \item The system should provide a user-friendly interface.
-    \item Users should be able to register for an account with a valid email address.
-    \item Upon registration, users should receive a confirmation email.
-    \item The system should allow users to log in securely using their credentials.
-    \item Users should be able to create, update, and delete their profiles.
+    \item \textbf{Understanding:} users will exhibit a clear comprehension of the physicalization's representation of IAQ data, as well as an understanding of its intended function and impact
+    \item \textbf{Self-reflection:} users exposure to real-time IAQ data visualizations through the prototype will prompt users to reflect and will lead to increased awareness.
+    \item \textbf{Effectiveness:} users' acceptance and satisfaction with the IAQ physicalization will be positively correlated with perceived usefulness, attitude towards use, and system usability.
 \end{enumerate}
 
 \subsubsection{Participant sampling}

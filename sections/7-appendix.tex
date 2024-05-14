@@ -78,20 +78,6 @@ Photographs of the meeting rooms used for the lab-setup.
 \end{minipage}%
 \end{figure}
 
-\section{IoT architecture of the prototype}
-\label{appendix:architecture}
-
-System diagram which shows the IoT architecture of the prototype.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\paperwidth]{system.png}
-    \caption{System diagram that shows the technical set-up of the prototype}
-    \label{fig:timeline}
-\end{figure}
-
-\pagebreak
-
 \section{Building impressions}
 \label{appendix:building}
 
@@ -134,10 +120,10 @@ System diagram which shows the IoT architecture of the prototype.
 \end{minipage}%
 \end{figure}
 
-\section{Weekly schedule}
-\label{appendix:schedule}
+\section{IoT architecture of the prototype}
+\label{appendix:architecture}
 
-Horizontal boxplot that indicates an average week of booking in the meeting rooms scheduled.
+System diagram which shows the IoT architecture of the prototype.
 
 \begin{figure}[H]
     \centering
@@ -146,33 +132,101 @@ Horizontal boxplot that indicates an average week of booking in the meeting room
     \label{fig:timeline}
 \end{figure}
 
-\pagebreak
+\section{Existing Building API sample data}
+\label{appendix:architecture}
+
+Overview of the current building API with outputs.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\paperwidth]{system.png}
+    \caption{System diagram that shows the technical set-up of the prototype}
+    \label{fig:timeline}
+\end{figure}
 
 \section{Air Quality Monitors sample data}
 \label{appendix:monitors}
 
+Sample data log of the monitor devices.
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \tiny
+    \begin{tabular}{@{} *{11}{c} @{}}
+        \toprule
+        \textbf{Date} & \textbf{Time} & \textbf{CO2} & \textbf{Temp} & \textbf{RH} & \textbf{PM1.0} & \textbf{PM2.5} & \textbf{PM10} & \textbf{TVOC} & \textbf{BP} & \textbf{O3} \\
+        \midrule
+        2024/04/03 & 10:30 & 647 & 21'C & 39\% & 0 & 0 & 0 & 255 & 99.97 & 0 \\
+        2024/04/03 & 10:29 & 641 & 21'C & 39\% & 0 & 0 & 0 & 249 & 99.97 & 0 \\
+        2024/04/03 & 10:28 & 633 & 21'C & 39\% & 0 & 0 & 0 & 246 & 99.97 & 0 \\
+        2024/04/03 & 10:27 & 635 & 21'C & 39\% & 1 & 1 & 1 & 242 & 99.97 & 0 \\
+        2024/04/03 & 10:26 & 632 & 21'C & 39\% & 0 & 1 & 1 & 237 & 99.97 & 0 \\
+        2024/04/03 & 10:25 & 628 & 21'C & 39\% & 0 & 1 & 1 & 236 & 99.97 & 0 \\
+        2024/04/03 & 10:24 & 617 & 21'C & 39\% & 0 & 1 & 1 & 232 & 99.97 & 0 \\
+        2024/04/03 & 10:23 & 602 & 21'C & 39\% & 0 & 1 & 1 & 232 & 99.97 & 0 \\
+        2024/04/03 & 10:22 & 598 & 21'C & 39\% & 0 & 0 & 0 & 231 & 99.97 & 0 \\
+        2024/04/03 & 10:21 & 591 & 21'C & 39\% & 0 & 1 & 1 & 228 & 99.97 & 0 \\
+        2024/04/03 & 10:20 & 587 & 21'C & 39\% & 0 & 0 & 0 & 228 & 99.97 & 0 \\
+        2024/04/03 & 10:19 & 580 & 21'C & 39\% & 0 & 0 & 0 & 230 & 99.97 & 0 \\
+        2024/04/03 & 10:18 & 580 & 21'C & 39\% & 0 & 0 & 0 & 232 & 99.97 & 0 \\
+        2024/04/03 & 10:17 & 578 & 21'C & 39\% & 1 & 1 & 1 & 234 & 99.97 & 0 \\
+        2024/04/03 & 10:16 & 574 & 21'C & 39\% & 0 & 0 & 0 & 237 & 99.97 & 0 \\
+        2024/04/03 & 10:15 & 569 & 21'C & 39\% & 0 & 0 & 0 & 237 & 99.97 & 0 \\
+        \bottomrule
+    \end{tabular}%
+    }
+    \vspace{10pt} % Adjust the amount of whitespace as needed
+    \caption{Sample data log of the Aircheq Touch Aero installed in the 'small' Room A} 
+    \label{tab:room-A}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \tiny
+    \begin{tabular}{@{} *{11}{c} @{}}
+        \toprule
+        \textbf{Date} & \textbf{Time} & \textbf{Temp} & \textbf{RH} & \textbf{DewPoint} & \textbf{CO2} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} \\
+        \midrule
+        10/04/2024 & 14:17:00 & 21.019 & 30.780 & 3.176 & 871.000 \\
+        10/04/2024 & 14:18:00 & 21.039 & 30.573 & 3.098 & 871.000 \\
+        10/04/2024 & 14:19:00 & 21.019 & 30.365 & 2.985 & 827.000 \\
+        10/04/2024 & 14:20:00 & 21.049 & 30.164 & 2.917 & 808.000 \\
+        10/04/2024 & 14:21:00 & 21.059 & 29.895 & 2.838 & 808.000 \\
+        10/04/2024 & 14:22:00 & 21.059 & 29.852 & 2.772 & 773.000 \\
+        10/04/2024 & 14:23:00 & 21.059 & 29.730 & 2.723 & 773.000 \\
+        10/04/2024 & 14:24:00 & 21.079 & 29.608 & 2.665 & 773.000 \\
+        10/04/2024 & 14:25:00 & 21.059 & 29.486 & 2.607 & 721.000 \\
+        10/04/2024 & 14:26:00 & 21.059 & 29.303 & 2.520 & 714.000 \\
+        10/04/2024 & 14:27:00 & 21.049 & 29.242 & 2.482 & 714.000 \\
+        10/04/2024 & 14:28:00 & 21.079 & 29.181 & 2.479 & 714.000 \\
+        10/04/2024 & 14:29:00 & 21.059 & 29.016 & 2.400 & 681.000 \\
+        10/04/2024 & 14:30:00 & 21.089 & 28.912 & 2.358 & 681.000 \\
+        \bottomrule
+    \end{tabular}%
+    }\vspace{10pt} % Adjust the amount of whitespace as needed
+    \caption{Sample data log of the Atal ATU-CT ClimaTrend installed in the 'large' Room B} 
+    \label{tab:room-b}
+\end{table}
+
+
 \section{Questionnaire survey (POE)}
 \label{appendix:survey}
 
-\textbf{Introduction:}\\
+Exported text version of the questionnaire survey created in Qualtrics and distributed using handouts on QR codes.
 
-Hi! We at the Digital Interactions Lab (DIL) are researching indoor environments, focusing on Indoor Air Quality (IAQ) within smart buildings like Lab42, for a Master Thesis. This survey takes an average of $\sim$3 minutes to complete and comprises questions about your overall comfort and awareness of Indoor Air Quality (IAQ).
+\vspace{10pt} % Adjust the length as needed
 
-The survey is anonymous and collects data on environmental experiences and approximate building location for future research and publication.
+\textbf{Introduction:}
+\textit{Hi! We at the Digital Interactions Lab (DIL) are researching indoor environments, focusing on Indoor Air Quality (IAQ) within smart buildings like Lab42, for a Master Thesis. This survey takes an average of $\sim$3 minutes to complete and comprises questions about your overall comfort and awareness of Indoor Air Quality (IAQ).}\\
 
-\textbf{Informed constent:}\\
-Participation is voluntary, and if you decide that you do not want to participate after you have completed it, please contact us.
+\textbf{Informed Consent:}
+\textit{The survey is anonymous and collects data on environmental experiences and approximate building location for future research and publication. Participation is voluntary, and if you decide that you do not want to participate after you have completed it, please contact us. Principal researcher: BSc D. de Vries - danny.de.vries@student.uva.nl Supervisor(s): Shruti Rao PhD Candidate - s.rao@uva.nl Supervisor(s): Dr. H. Seiied Alavi PhD - ha.alavi@uva.nl Thank you for your valuable time and for participating in our survey!}
 
-\textbf{Contact details:}\\
-Principal researcher: BSc D. de Vries - \href{mailto:danny.de.vries@student.uva.nl}{danny.de.vries@student.uva.nl}
+\vspace{10pt} % Adjust the length as needed
 
-Supervisor(s): Shruti Rao PhD Candidate - \href{mailto:s.rao@uva.nl}{s.rao@uva.nl}
-
-Supervisor(s): Dr. H. Seiied Alavi PhD - \href{mailto:ha.alavi@uva.nl}{ha.alavi@uva.nl}
-
-Thank you for your valuable time and for participating in our survey!\\\\
-
-\textbf{Q1: Location}- Where are you currently located within the Lab42 building?
+\textbf{Q1: Location}- Where are you currently located within the Lab42 building? \textit{Multiple-choice, one option possible}
 
 \begin{itemize}
     \item On the ground floor (the atrium)
@@ -180,7 +234,7 @@ Thank you for your valuable time and for participating in our survey!\\\\
     \item On the second floor (2nd floor - in a working space)
 \end{itemize}
 
-\textbf{Q2: Activity} - On average, how often do you use Lab42 per week for various activities?
+\textbf{Q2: Activity} - On average, how often do you use Lab42 per week for various activities? \textit{Multiple-choice, one option possible}
 
 \begin{itemize}
     \item 1 day a week
@@ -190,7 +244,7 @@ Thank you for your valuable time and for participating in our survey!\\\\
     \item 5 days a week
 \end{itemize}
 
-\textbf{Q3: Occupancy} - How would you describe the occupancy in your current space?
+\textbf{Q3: Occupancy} - How would you describe the occupancy in your current space? \textit{Multiple-choice, one option possible}
 
 \begin{itemize}
     \item Not crowded
@@ -200,15 +254,29 @@ Thank you for your valuable time and for participating in our survey!\\\\
     \item At capacity
 \end{itemize}
 
-\textbf{Q4: Awareness Air Quality} - Did you know that poor air quality has been identified to pose health risks and affect cognitive performance? How aware are you of the current air quality in this space?
+\textbf{Q4: Awareness Air Quality} - Did you know that poor air quality has been identified to pose health risks and affect cognitive performance? How aware are you of the current air quality in this space? \textit{Likert-scale, one option possible}
 
-\textbf{Q6: Perceived Air Quality} - How do you perceive the air quality in the current space?
+\textbf{1)} Very Unaware \textbf{2)} Unaware \textbf{3)} Neutral \textbf{4)} Aware \textbf{5)} Very Aware
 
-\textbf{Q7: Satisfaction Air Quality} - How satisfied are you with the air quality in the current space?
+\vspace{10pt}
 
-\textbf{Q8: Not mandatory} - Would you like to describe in more detail in your own words how you currently feel about the Indoor Air Quality?
+\textbf{Q6: Perceived Air Quality} - How do you perceive the air quality in the current space? \textit{Likert-scale, one option possible}
 
-\textbf{Q9: Health symptoms} - Do you experience any health-related symptoms based on the air quality in this space?
+\textbf{1)} Very Poor \textbf{2)} Poor \textbf{3)} Acceptable \textbf{4)} Good \textbf{5)} Very Good 
+
+\vspace{10pt}
+
+\textbf{Q7: Satisfaction Air Quality} - How satisfied are you with the air quality in the current space? \textit{Likert-scale, one option possible}
+
+\textbf{1)} Very Dissatisfied \textbf{2)} Dissastisfied \textbf{3)} Neither dissatisfied or satisfied \textbf{4)} Satisfied \textbf{5)} Very Satisfied
+
+\vspace{10pt}
+
+\textbf{Q8: Not mandatory} - Would you like to describe in more detail in your own words how you currently feel about the Indoor Air Quality? \textit{Open-question, insert text}
+
+\vspace{10pt}
+
+\textbf{Q9: Health symptoms} - Do you experience any health-related symptoms based on the air quality in this space? \textit{Multiple-choice, multiple options possible, insert text field}
 
 \begin{itemize}
     \item None
@@ -218,7 +286,7 @@ Thank you for your valuable time and for participating in our survey!\\\\
     \item Other
 \end{itemize}
 
-\textbf{Q10: Cognitive symptoms} - Do you experience any cognitive-based symptoms on the air quality in this space?
+\textbf{Q10: Cognitive symptoms} - Do you experience any cognitive-based symptoms on the air quality in this space? \textit{Multiple-choice, multiple options possible, insert text field}
 
 \begin{itemize}
     \item None
@@ -229,38 +297,13 @@ Thank you for your valuable time and for participating in our survey!\\\\
 \end{itemize}
 
 
-\section{Harris profile}
+\section{Survey data}
 \label{appendix:profile}
 
+\section{Monitor data}
+\label{appendix:profile}
 
-\begin{table}[h]
-    \centering
-    \begin{tabularx}{\textwidth}{|c|*{12}{X|}}
-        \hline
-        & \multicolumn{4}{c|}{Concept 1} & \multicolumn{4}{c|}{Concept 2} & \multicolumn{4}{c|}{Concept 3} \\
-        \cline{2-13}
-        Requirements & -2 & -1 & +1 & +2 & -2 & -1 & +1 & +2 & -2 & -1 & +1 & +2 \\
-        \hline
-        Row 1 & & & & & & & & & & & & \\
-        \hline
-        Row 2 & & & & & & & & & & & & \\
-        \hline
-        Row 3 & & & & & & & & & & & & \\
-        \hline
-        Row 4 & & & & & & & & & & & & \\
-        \hline
-        Row 5 & & & & & & & & & & & & \\
-        \hline
-        Row 6 & & & & & & & & & & & & \\
-        \hline
-        Row 7 & & & & & & & & & & & & \\
-        \hline
-        Total Score & \multicolumn{4}{c|}{Total} & \multicolumn{4}{c|}{Total} & \multicolumn{4}{c|}{Total} \\
-        \hline
-    \end{tabularx}
-    \caption{Harris profile for the three concepts models to visualize the strengths and weaknesses of the design concepts.}
-    \label{tab:requirements_table}
-\end{table}
+\newpage
 
 \section{Expert reviews}
 \label{appendix:expert}

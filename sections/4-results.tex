@@ -6,7 +6,14 @@ The goal of the chosen methodologies (see \hyperref[sec:related_work]{Section \r
 \subsection{Survey analysis}
 \label{sec:survey_analysis}
 
-The following section presents the outcomes of the survey conducted to assess various aspects related to occupants' activity, IAQ awareness, satisfaction, perception, and health impacts among Lab42 building occupants. The responses show that most occupants are located in the atrium of the building, not particularly aware of the IAQ, and perceive the IAQ as acceptable based on the large open area and planters, meeting satisfactory IAQ levels. 
+The following section presents the outcomes of the survey conducted to assess various aspects related to occupants' activity, IAQ awareness, satisfaction, perception, and health impacts among Lab42 building occupants. The responses show that most occupants are located in the atrium of the building, not particularly aware of the IAQ, and perceive the IAQ as acceptable based on the large open area and planters, meeting satisfactory IAQ levels.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{IAQ_LIkert-Scales_Survey.jpg}
+    \caption{Likert-scales of IAQ awareness, perception and satisfaction of the questionnaire survey with occupant count}
+    \label{fig:complexity}
+\end{figure}
 
 \subsubsection{Activity and occupancy}
 
@@ -44,10 +51,6 @@ P16: "[..] I also see green plants around me, of which I think they are real."
 \end{quote}
 
 \begin{quote}
-P21: "I thrive on the oxygen provided by the many plants here [..]"
-\end{quote}
-
-\begin{quote}
 P14: "[...] and the hanging plants that are present.
 \end{quote}
 
@@ -56,7 +59,19 @@ P14: "[...] and the hanging plants that are present.
 \subsection{Air Quality Monitors}
 \label{sec:monitor_analysis}
 
-Show graphs of the sample data. Hypothesis is that when meetings occur with more occupants after a while the air quality exceeds recommended standards.
+The gathered data logs are exported from the devices and analyzed with a focus on CO2 concentrations since this is the main IAQ parameter that influences air quality negatively within indoor environments based on occupancy within a room. Analyzation of the data logs shows occupancy patterns of a 'typical meeting', scheduled meeting patterns for the case study rooms and more notably the development of CO2 concentrations within both meeting rooms regularly where they regulary exceed optimal CO2 concentration tresholds above 600ppm.
+
+\subsubsection{Single meeting CO2 development}
+
+A sample of CO2 concentrations in a single meeting is shown in (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}). The lineplot shows the development of a 'regular' 1-hour meeting within the room. The plot are the CO2 concentrations over time in minutes with a x-axis line of 600ppm indicating the maximum 'ideal' treshold. Two coloured lines on the y-axis indicate the start and end time of the meeting. The observations show that after 15 minutes of the meeting started the CO2 concentrations reach suboptimal levels and continou to rise towards 950ppm level where it stabilizes as the 'maximum value' of the meeting. As stated before, continous exposure to CO2 concentrations especially between 800ppm - 1000ppm and even above are considered 'bad' and can impact cognitive functions. After ending of the meeting the concentrations slowly start to decrease to the baseline of 450ppm when occupants leave the meeting room at the end time.
+
+\subsubsection{Regular day CO2 development}
+
+The visualization (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}) shows the spikes of CO2 concentrations during a sample day where multiple meetings occured. Again, the x-axis plots the CO2 concentrations and this time the y-axis shows a full day with opening hours of the building. Based on similar plots of randomly sampled days the data shows most meetings occur between late in the morning (11:00) and usually end late in the afternoon (17:00) where after no more meetings are planned. That's roughly two hours after opening of the building and roughly four hours before closing of the building. There are outliers, on some days meeting occur early in the morning straight after opening time, and occassionaly a (longer) meeting that is longer and spans longer in the evening.
+
+\subsubsection{Meeting schedule CO2 development}
+
+A heatmap of ten days of CO2 concentration monitoring (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}) shows that it's common that two or three meetings occur on a single day and typically spans one hour. The majority of the meetings go beyond the 600ppm CO2 concentrations. Based on the lineplots and heatmaps it is assumed that the 'larger' Room B is more frequently used and reaches higher CO2 concentrations but those results are not definite since it heavily relies on context and the dates and time periods that spanned the data collection and the monitors were installed.
 
 \subsection{Prototype}
 \label{sec:prototype_results}
@@ -102,18 +117,12 @@ Write about data scale (stevens) nominal, ordinal and numerical. Needs electroni
   \item \textbf{Movement}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
 \end{itemize}
 
-\subsubsection{Experimental set-up}
-
-Write about how the prototype is in the room. Installed (reference lab settings again). Reference figures in appendix for more photographs and impressions.
-
-\subsubsection{Haptics}
-
-Write about interaction and haptics it support.
-
-\begin{itemize}
-  \item \textbf{Sight}: visually see string become largers. Acts as a metaphor of plant 'growth'. The better the air quality the more the plant can 'grow'.
-  \item \textbf{Movement}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
-\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{placeholder-two.jpg}
+    \caption{Bluebird prototype installed in the meeting room}
+    \label{fig:complexity}
+\end{figure}
 
 \subsection{Evaluation}
 \label{sec:evaluation_results}

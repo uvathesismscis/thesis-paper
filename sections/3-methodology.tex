@@ -1,13 +1,18 @@
 \section{Methodology}
 \label{sec:methodology}
 
-To answer the research question this study uses a human-centered approach (often referred to as Design Thinking) commonly found in Human-Computer Interaction studies consisting of four phases; 1) user studies to \textit{understand} the user, 2) \textit{data collection} methods and analysis of the situation as field trials, 3) \textit{ideation} and experimental design of a prototype and 4) \textit{evaluation} and usability testing of the prototype \cite{jonathan_lazar_research_2017, zimmerman_research_2007}. This mixed-methods approach (both qualitative and quantitative)  helps understand occupants' needs and informs the design and technical set-up of the prototype evaluating the effectiveness by focusing on the user's needs from the start of the study \cite{rogers_moving_2017, experience_ux_2024}. 
-
-For the first phase, an online questionnaire was conducted to \textit{understand} occupants' awareness of indoor air quality (see \hyperref[sec:questionnaire]{Section \ref*{sec:questionnaire}}), for the second phase a lab setting was created with IAQ monitors to do \textit{data collection} and gain insight into environmental data (see \hyperref[sec:monitoring]{Section \ref*{sec:monitoring}}) which in turn informed phase three the \textit{ideation} and creation of the prototype (see \hyperref[sec:ideation]{Section \ref*{sec:ideation}}, \hyperref[sec:prototype]{Section \ref*{sec:prototype}}). In the last phase participants \textit{evaluated} the prototype and performed usability tests (see \hyperref[sec:evaluation]{Section \ref*{sec:evaluation}}). The concepts of indoor air quality monitoring and data physicalization were investigated through literature review and desk research before setting up the survey, creating the prototype, and conducting the evaluation interviews.
+To answer the research question this study uses a human-centered approach (often referred to as Design Thinking) commonly found in Human-Computer Interaction studies consisting of four phases; 1) user studies to \textit{understand} the user, 2) \textit{data collection} methods and analysis of the situation as field trials, 3) \textit{ideation} and experimental design of a prototype and 4) \textit{evaluation} and usability testing of the prototype \cite{jonathan_lazar_research_2017, zimmerman_research_2007}. This mixed-methods approach (both qualitative and quantitative)  helps understand occupants' needs and informs the design and technical set-up of the prototype evaluating the effectiveness by focusing on the user's needs from the start of the study \cite{rogers_moving_2017, experience_ux_2024}. For the first phase, an online questionnaire was conducted to \textit{understand} occupants' awareness of indoor air quality (see \hyperref[sec:questionnaire]{Section \ref*{sec:questionnaire}}), for the second phase a lab setting was created with IAQ monitors to do \textit{data collection} and gain insight into environmental data (see \hyperref[sec:monitoring]{Section \ref*{sec:monitoring}}) which in turn informed phase three the \textit{ideation} and creation of the prototype (see \hyperref[sec:ideation]{Section \ref*{sec:ideation}}, \hyperref[sec:prototype]{Section \ref*{sec:prototype}}). In the last phase participants \textit{evaluated} the prototype and performed usability tests (see \hyperref[sec:evaluation]{Section \ref*{sec:evaluation}}). The concepts of indoor air quality monitoring and data physicalization were investigated through literature review and desk research before setting up the survey, creating the prototype, and conducting the evaluation interviews.
 
 \subsection{Case study building}
 
 This study will be conducted in association with the Digital Interactions Lab \footnote{https://uva-dilab.com/} and will utilize the recently opened Lab42 \footnote{https://lab42.uva.nl/} building at the UvA Amsterdam Science Park \footnote{https://www.amsterdamsciencepark.nl/} as its primary case study location (see \hyperref[appendix:building]{Appendix \ref*{appendix:building}}). Lab42 is an energy-neutral, flexible, and adaptable faculty building that facilitates collaborations among students, researchers, and businesses \cite{benthem_2022}. 
+
+\begin{figure}[H]
+    \centering
+   \includegraphics[width=0.45\textwidth,height=0.15\textwidth]{building_impressions.jpg}
+    \caption{Impression photographs of the case study building}
+    \label{fig:complexity}
+\end{figure}
 
 \subsubsection{Space usage}
 
@@ -85,7 +90,7 @@ We deployed the monitors in meeting rooms occupants regularly use which allowed 
 
 \subsubsection{Data logs}
 
-The data gathered by the sensors provides insights into various standardized measurements related to common pollutants that affect IAQ such as molds and allergens (humidity), volatile organic compounds (VOC), and carbon dioxide (CO2) (see \hyperref[tab:air-quality]{Table \ref*{tab:air-quality}}, \hyperref[appendix:monitors]{Appendix \ref*{appendix:monitors}}). We cross-referenced the data logs with two weekly schedules based on the internal booking systems of the rooms based on the timestamped data to align the values of the sensors from the data logs when meetings were scheduled. Data analysis is performed similarly as described in (see \hyperref[sec:analysis]{Section \ref*{sec:analysis}}). were data was cleaned to remove data from mainly non-opening hours and plotted and visualized to explore patterns in the data and cross-reference them with meeting times.
+The data gathered by the sensors provides insights into various standardized measurements related to common pollutants that affect IAQ such as molds and allergens (humidity), volatile organic compounds (VOC), and carbon dioxide (CO2) (see \hyperref[tab:air-quality]{Table \ref*{tab:air-quality}}, \hyperref[appendix:monitors]{Appendix \ref*{appendix:monitors}}). We cross-referenced the data logs with weekly schedules based on the internal booking systems of the rooms based on the timestamped data to align the values of the sensors from the data logs when meetings were scheduled. Data analysis is performed similarly as described in (see \hyperref[sec:analysis]{Section \ref*{sec:analysis}}). were data was cleaned to remove data from mainly non-opening hours and plotted and visualized to explore patterns in the data and cross-reference them with meeting times.
 
 
 \subsection{Ideation and requirements}
@@ -183,23 +188,17 @@ All interviews were anonymized and conducted in-person on-site and audio recorde
 
 \begin{figure*}[b]
     \centering
-        \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth, height=0.46\textwidth]{placeholder-two.jpg}
-        \caption{Placeholder caption}
+        \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{room-b-monitor-heatmap.png}
+        \caption{Heatmap of Room B with ten days of data collection}
         \label{fig:3_4_combined}
     \end{subfigure}
-    \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{placeholder.jpg}
-        \caption{Placeholder caption}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{room-b-monitor-meeting-spike-day.png}
+        \caption{Lineplot of Room B with a single day of meetings}
         \label{fig:1}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.23\textwidth}
-        \includegraphics[width=\textwidth]{placeholder.jpg}
-        \caption{Placeholder caption}
-        \label{fig:2}
-    \end{subfigure}
-    \hfill
-    \caption{Impressions of the ideations and prototyping phase}
+    \caption{Plots of the IAQ monitor data logs CO2 concentrations within the meeting rooms}
     \label{fig:full_width}
 \end{figure*}

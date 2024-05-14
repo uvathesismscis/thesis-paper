@@ -21,7 +21,7 @@ The second set of questions were three Likert scales about perceived IAQ, awaren
 The third set of questions were to indicate if users suffered from health or cognitive symptons based on the IAQ. The majority of participants answered \textit{none} to both the health ($f$=X) and cognitive ($f$=X) questions. A small percentage experienced health symptoms such as headaches and feeling noiziating and a larger percentage experienced cognitive symptons such as trouble with focus or tiredness. The results of this section of the survey are inconclusive since it's difficult to determine if these symptons are specifically related to the air quality.
 
 \subsubsection{Open-ended air quality description}
-The most notable finding of the open question is that the occupants who filled in the not mandatory question describing their perception of IAQ mention the openness of the atrium space.
+The most notable finding of the open question is that the occupants who filled in the not mandatory question describing their perception of IAQ mention specifically the openness of the atrium space:
 
 \begin{quote}
 P11: "[...] think it is good, [...] although I must say that this is mostly based on the large amount of open space in the building"
@@ -37,10 +37,10 @@ P8: " [...] feel like in this building the air quality is really good, mainly be
 P13: "I like the air quality. This may also be because I sit close to the door and the ceiling is high."
 \end{quote}
 
-Another notable attribute many occupants describe contributing to the perception that the IAQ is sufficient are the hanging planters and greenery that is present within the atrium.
+Another notable attribute is that many occupants describe contributing to the perception that the IAQ is sufficient are the hanging planters and greenery that is present within the atrium.
 
 \begin{quote}
-P8: "I also see green plants around me, of which I think they are real. [..]"
+P16: "[..] I also see green plants around me, of which I think they are real."
 \end{quote}
 
 \begin{quote}
@@ -61,7 +61,27 @@ Show graphs of the sample data. Hypothesis is that when meetings occur with more
 \subsection{Prototype}
 \label{sec:prototype_results}
 
-The prototype was hang-up at the two meeting rooms. Interaction set-up etc.
+Based on the requirements, data physicalization design principles, and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution as a feasibility study and utilized in the user study for evaluation.
+
+\subsubsection{Concept description}
+
+\textit{Bluebird} is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hung from the ceiling in small to medium rooms and changes based on real-time air quality monitor data. Strings (plant branches) either become longer or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement. The overall design philosophy of the shapes and forms uses the notion of calm technology to minimize interruption cost \cite{case_calm_2016}. 
+
+\subsubsection{Electronics and components}
+
+A controller device running on an Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with an MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with fishing lines simulating the growth of the hanging planter so that the string can be moved up and down.
+
+
+\subsubsection{Crafting technologies and materials}
+The strings, leaves, and housings of the electronics and mechanical hardware are created using additive manufacturing (3D Printing) using a Fused deposition Modeling (FDM) technique using Polylactic acid (PLA) plastic filament in various colors. The electronics enclosures and plant models were modeled using computer-aided design (CAD) software. A digital fabrication technique commonly found in data physicalization prototypes \cite{anhalt_university_germany_design_2022}. To create leaves representing textile or fabric custom properties were defined within the 3D printing software (Slicing) to remove top and bottom layers and create a thin layer of infill.
+
+\subsubsection{System Architecture and software}
+
+The microcontroller uses custom firmware written in Arduino code \footnote{https://www.arduino.cc/reference/en/} (similar to C++) that receives real-time data from the air quality monitors using the LoRaWAN \footnote{https://lora-alliance.org/about-lorawan/} communication protocol to control the mechanics of the prototype (see \hyperref[appendix:architecture]{Appendix \ref*{appendix:architecture}}). This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}.
+
+\subsubsection{Experimental set-up}
+
+The prototype was hang-up at the two meeting rooms. Interaction set-up etc. Write about how the prototype is in the room. Installed (reference lab settings again). Reference figures in appendix for more photographs and impressions.
 
 We derived five relevant dimensions based on the literature; \textit{audience, intention, interaction, philosophy, representation} \cite{sauve_physecology_2022, hornecker_design_2023}.
 

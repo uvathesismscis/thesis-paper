@@ -138,28 +138,6 @@ Based on the user requirements and ideation and concepting from the Communicatio
 
 Concept selection was based on weighted physicalization criteria from the literature, a Harris profile for the lo-fi concepts, and four expert reviews ($n$=2 internal experts involved in the project, $n$=2 external experts not involved in the project) feedback (see \hyperref[appendix:profile]{Appendix \ref*{appendix:profile}}, \hyperref[appendix:expert]{Appendix \ref*{appendix:expert}}). Also technical limitations of the provided hardware (e.g. real-time data output of monitors, cost of hardware, availability of electronic components,) and limitations in the technical set-up of the building (e.g. space in the meeting rooms, not allowed to alter furniture) were considered as heuristic evaluation. Based on the aggregation of these criteria the \textit{Bluebird} concept was chosen to be further developed into a high-fidelity prototype (see \hyperref[fig:bluebird]{Figure \ref*{fig:bluebird}}, \hyperref[appendix:prototype]{Appendix \ref*{appendix:prototype}}).
 
-
-\subsection{Prototype}
-\label{sec:prototype}
-
-Based on the requirements, data physicalization design principles, and concept models exploration a final high fidelity (hi-fi) version of the prototype was developed that functioned as a proof-of-concept of the physical design solution as a feasibility study and utilized in the user study for evaluation.
-
-\subsubsection{Concept description}
-
-\textit{Bluebird} is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hung from the ceiling in small to medium rooms and changes based on real-time air quality monitor data. Strings (plant branches) either become longer or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement. The overall design philosophy of the shapes and forms uses the notion of calm technology to minimize interruption cost \cite{case_calm_2016}. 
-
-\subsubsection{Electronics and components}
-
-A controller device running on an Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with an MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with fishing lines simulating the growth of the hanging planter so that the string can be moved up and down.
-
-
-\subsubsection{Crafting technologies and materials}
-The strings, leaves, and housings of the electronics and mechanical hardware are created using additive manufacturing (3D Printing) using a Fused deposition Modeling (FDM) technique using Polylactic acid (PLA) plastic filament in various colors. The electronics enclosures and plant models were modeled using computer-aided design (CAD) software. A digital fabrication technique commonly found in data physicalization prototypes \cite{anhalt_university_germany_design_2022}. To create leaves representing textile or fabric custom properties were defined within the 3D printing software (Slicing) to remove top and bottom layers and create a thin layer of infill.
-
-\subsubsection{System Architecture and software}
-
-The microcontroller uses custom firmware written in Arduino code \footnote{https://www.arduino.cc/reference/en/} (similar to C++) that receives real-time data from the air quality monitors using the LoRaWAN \footnote{https://lora-alliance.org/about-lorawan/} communication protocol to control the mechanics of the prototype (see \hyperref[appendix:architecture]{Appendix \ref*{appendix:architecture}}). This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}.
-
 \subsection{Evaluation}
 \label{sec:evaluation}
 

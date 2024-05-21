@@ -332,7 +332,7 @@
             \end{center}
         \else
             \begin{center}
-            \begin{tabular}{|l||ll|}
+            \begin{tabular}{|l||l|l|}
             \hline
             {}                      & \textbf{UvA Supervisor}  & \textbf{UvA Examiner}         \\   
             \hline

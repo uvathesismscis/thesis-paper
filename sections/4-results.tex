@@ -61,6 +61,13 @@ P14: "[...] and the hanging plants that are present.
 
 The gathered data logs are exported from the devices and analyzed with a focus on CO2 concentrations since this is the main IAQ parameter that influences air quality negatively within indoor environments. The process of breathing accumulates CO2 and the air quality within a space is heavily influenced by the occupancy within a room. Analyzation of the data logs shows occupancy patterns of a 'typical meeting', scheduled meeting patterns for the case study rooms and more notably the development of CO2 concentrations within both meeting rooms regularly where they regulary exceed optimal CO2 concentration tresholds above 600ppm.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{room-b-monitor-heatmap.png}
+    \caption{Heatmap of ten days of data logs from Room B showing the peaks of CO2 concentrations monitored }
+    \label{fig:complexity}
+\end{figure}
+
 \subsubsection{Single meeting CO2 development}
 
 A sample of CO2 concentrations in a single meeting is shown in (see \hyperref[fig:complexity]{Figure \ref*{fig:complexity}}). The lineplot shows the development of a 'regular' 1-hour meeting within the room. The plot are the CO2 concentrations over time in minutes with a x-axis line of 600ppm indicating the maximum 'ideal' treshold. Two coloured lines on the y-axis indicate the start and end time of the meeting. The observations show that after 15 minutes of the meeting started the CO2 concentrations reach suboptimal levels and continou to rise towards 950ppm level where it stabilizes as the 'maximum value' of the meeting. As stated before, continous exposure to CO2 concentrations especially between 800ppm - 1000ppm and even above are considered 'bad' and can impact cognitive functions. After ending of the meeting the concentrations slowly start to decrease to the baseline of 450ppm when occupants leave the meeting room at the end time.
@@ -87,6 +94,8 @@ Based on the requirements, data physicalization design principles, and concept m
 A controller device running on an Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with an MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with paracord rope simulating the growth of the hanging planter so that the string can be moved up and down. All electronics are integrated at the back of a wooden board, enabling the device to act as a stand-alone device making it movable and modular to be installed in other spaces.
 
 
+
+
 \subsubsection{Crafting technologies and materials}
 The strings, leaves, and housings of the electronics and mechanical hardware are created using additive manufacturing (3D Printing) using a Fused deposition Modeling (FDM) technique using Polylactic acid (PLA) plastic filament in various colors. The electronics enclosures and plant models were modeled using computer-aided design (CAD) software. A digital fabrication technique commonly found in data physicalization prototypes \cite{anhalt_university_germany_design_2022}. To create leaves representing textile or fabric custom properties were defined within the 3D printing software (Slicing) to remove top and bottom layers and create a thin layer of infill.
 
@@ -96,52 +105,38 @@ The microcontroller uses custom firmware written in Arduino code \footnote{https
 
 \subsubsection{Experimental set-up}
 
-The prototype was installed \textit{in situ} within one of the monitored meeting rooms inside of the building.
-
-We derived five relevant dimensions based on the literature; \textit{audience, intention, interaction, philosophy, representation} \cite{sauve_physecology_2022, hornecker_design_2023}.
-
-\subsubsection{Audience}
-
-\subsubsection{Intention}
-
-\subsubsection{Interaction}
-
-\subsubsection{Data representation}
-
-Write about data scale (stevens) nominal, ordinal and numerical. Needs electronic components (e.g. microcontrollers, sensors) and non-electronic components.
-
-\subsubsection{Design elements}
+The prototype was installed \textit{in situ} within one of the monitored meeting rooms inside of the building. We derived five relevant dimensions based on the literature; \textit{audience, intention, interaction, philosophy, representation} \cite{sauve_physecology_2022, hornecker_design_2023}.
 
 \begin{itemize}
-  \item \textbf{Sight}: visually see string become largers. Acts as a metaphor of plant 'growth'. The better the air quality the more the plant can 'grow'.
-  \item \textbf{Movement}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
+  \item \textbf{Audience}: visually see string become largers. Acts as a metaphor of plant 'growth'. The better the air quality the more the plant can 'grow'.
+  \item \textbf{Intention}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
+  \item \textbf{Representation}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
+  \item \textbf{Interaction}: if fresh air comes in we indicate this through movement as a metaphor for wind gusses between a field of grass or plants.
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{placeholder-two.jpg}
-    \caption{Bluebird prototype installed in the meeting room}
-    \label{fig:complexity}
-\end{figure}
 
 \subsection{Evaluation}
 \label{sec:evaluation_results}
 
 The prototype-led evaluation sessions (see \ref{sec:questionnaire}) were held to assess the quality and impact of the data physicalisation with a focus on how users perceive the data embedded in the physical representation and what long-term impact it has on people.
 
-
-\subsubsection{Understanding (learnability)}
-
-Did users understand the phys? Know what it was visualizing? Users reaction?
-
-\subsubsection{Self-reflection (memorability)}
-
-Makes you more aware of IAQ?
-
-\subsubsection{Effectiveness (usefullnes)}
-
-Suspected to change habits based on output? Attitude change? Behavioral stimulation.
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.5\textwidth]{placeholder-two.jpg}
+    \caption{Installed photograph of the prototype in the room during an evaluation session with a participant }
+    \label{fig:complexity}
+\end{figure}
 
 
+\subsubsection{WIP (NOT FINISHED)}
 
-% Sometimes,  especially  if  you  have  quite  different experiments or research  questions,  it makes sense to interleave the experimental setup and the results sections, so the reader does not get lost. It is then helpful to structure clearly in (sub)subsections.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+\subsubsection{WIP (NOT FINISHED)}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.

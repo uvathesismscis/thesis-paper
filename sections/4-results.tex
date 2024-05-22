@@ -59,7 +59,7 @@ P14: "[...] and the hanging plants that are present.
 \subsection{Air Quality Monitors}
 \label{sec:monitor_analysis}
 
-The gathered data logs are exported from the devices and analyzed with a focus on CO2 concentrations since this is the main IAQ parameter that influences air quality negatively within indoor environments based on occupancy within a room. Analyzation of the data logs shows occupancy patterns of a 'typical meeting', scheduled meeting patterns for the case study rooms and more notably the development of CO2 concentrations within both meeting rooms regularly where they regulary exceed optimal CO2 concentration tresholds above 600ppm.
+The gathered data logs are exported from the devices and analyzed with a focus on CO2 concentrations since this is the main IAQ parameter that influences air quality negatively within indoor environments. The process of breathing accumulates CO2 and the air quality within a space is heavily influenced by the occupancy within a room. Analyzation of the data logs shows occupancy patterns of a 'typical meeting', scheduled meeting patterns for the case study rooms and more notably the development of CO2 concentrations within both meeting rooms regularly where they regulary exceed optimal CO2 concentration tresholds above 600ppm.
 
 \subsubsection{Single meeting CO2 development}
 
@@ -80,11 +80,11 @@ Based on the requirements, data physicalization design principles, and concept m
 
 \subsubsection{Concept description}
 
-\textit{Bluebird} is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data. It is meant to be hung from the ceiling in small to medium rooms and changes based on real-time air quality monitor data. Strings (plant branches) either become longer or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement. The overall design philosophy of the shapes and forms uses the notion of calm technology to minimize interruption cost \cite{case_calm_2016}. 
+\textit{Bluebird} is a hanging kinetic type sculpture inspired by organic nature materials and the shapes of hanging planters that encode the environmental properties of indoor air quality data fostering the relationship with nature. It is meant to be hung from the ceiling in small to medium rooms and changes based on real-time air quality monitor data engaging the occupants within the room into considering the level of air quality. Strings (plant branches) either become longer or smaller simulating the growth of a plant. Movements of the leaves indicate the freshness of air and movement. The overall design philosophy of the shapes and forms uses the notion of calm technology to minimize interruption cost \cite{case_calm_2016}. A unique characteristic of the prototype as opposed to existing (commercially available) solutions is that it shows predictions and history, so not only feedback on the current situation when the situation of high CO2 concentrations already occurred.
 
 \subsubsection{Electronics and components}
 
-A controller device running on an Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with an MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with fishing lines simulating the growth of the hanging planter so that the string can be moved up and down.
+A controller device running on an Arduino Uno R3 \footnote{https://store.arduino.cc/products/arduino-uno-rev3} microcontroller with an MKR Motor shield is used \footnote{https://store.arduino.cc/products/arduino-motor-shield-rev3} to control six 360° MG90S type Micro Servo Motors \footnote{https://www.towerpro.com.tw/product/mg90s-3/}. Attached to these motors are pulleys with paracord rope simulating the growth of the hanging planter so that the string can be moved up and down. All electronics are integrated at the back of a wooden board, enabling the device to act as a stand-alone device making it movable and modular to be installed in other spaces.
 
 
 \subsubsection{Crafting technologies and materials}
@@ -92,11 +92,11 @@ The strings, leaves, and housings of the electronics and mechanical hardware are
 
 \subsubsection{System Architecture and software}
 
-The microcontroller uses custom firmware written in Arduino code \footnote{https://www.arduino.cc/reference/en/} (similar to C++) that receives real-time data from the air quality monitors using the LoRaWAN \footnote{https://lora-alliance.org/about-lorawan/} communication protocol to control the mechanics of the prototype (see \hyperref[appendix:architecture]{Appendix \ref*{appendix:architecture}}). This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}.
+The microcontroller uses custom firmware written in Arduino code \footnote{https://www.arduino.cc/reference/en/} (similar to C++) that receives real-time data from the air quality monitors using the LoRaWAN \footnote{https://lora-alliance.org/about-lorawan/} communication protocol to control the mechanics of the prototype (see \hyperref[appendix:architecture]{Appendix \ref*{appendix:architecture}}). This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}. Some custom library functions are written in to calculate the movements of the string. The current (\( C_{\text{current}} \) ) and previous \( C_{\text{previous}} \) CO2 concentrations are stored on which a difference number is calculated. The difference number is mapped to a movement time \( t_{\text{movement}} \) in milliseconds using a multiplication factor. Based on a negative or positive integer the servo motors spin either clockwise (growing) or counterclockwise (shrinking) the ropes.
 
 \subsubsection{Experimental set-up}
 
-The prototype was hang-up at the two meeting rooms. Interaction set-up etc. Write about how the prototype is in the room. Installed (reference lab settings again). Reference figures in appendix for more photographs and impressions.
+The prototype was installed \textit{in situ} within one of the monitored meeting rooms inside of the building.
 
 We derived five relevant dimensions based on the literature; \textit{audience, intention, interaction, philosophy, representation} \cite{sauve_physecology_2022, hornecker_design_2023}.
 
@@ -127,7 +127,7 @@ Write about data scale (stevens) nominal, ordinal and numerical. Needs electroni
 \subsection{Evaluation}
 \label{sec:evaluation_results}
 
-The evaluation methods (see \ref{sec:questionnaire}) are used to assess the quality and impact of the data physicalisation with a focus on how users perceive the data embedded in the physical representation and what long-term impact it has on people.
+The prototype-led evaluation sessions (see \ref{sec:questionnaire}) were held to assess the quality and impact of the data physicalisation with a focus on how users perceive the data embedded in the physical representation and what long-term impact it has on people.
 
 
 \subsubsection{Understanding (learnability)}

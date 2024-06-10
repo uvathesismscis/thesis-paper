@@ -45,7 +45,7 @@ In the spirit of Open Access Research \footnote{https://uba.uva.nl/en/support/re
 \section{Floorplan and lab set-up}
 \label{appendix:floorplan}
 
-A floorplan diagram providing an overview of the technical lab setup of the small (Room A) and large (Room B) meeting rooms used for indoor air quality monitoring. The floorplan indicates the position the monitors are installed and the position of doors and windows.
+A floorplan diagram (see \hyperref[fig:floorplan]{Figure \ref{fig:floorplan}}) providing an overview of the technical lab setup of the small (Room A) and large (Room B) meeting rooms used for indoor air quality monitoring. The floorplan indicates the position the monitors are installed and the position of doors and windows.
 
 \begin{figure}[H]
     \centering
@@ -57,7 +57,7 @@ A floorplan diagram providing an overview of the technical lab setup of the smal
 \section{Meeting room impressions}
 \label{appendix:meetings}
 
-Photographs of the small (Room A) and large (Room B) meeting rooms taken from the viewpoint of the entrance of the door. It shows the default interior design set-up of the rooms and the position of the chairs and tables.
+Photographs of the small (Room A, see \hyperref[fig:room-a]{Figure \ref{fig:room-a}}) and large (Room B, see \hyperref[fig:room-b]{Figure \ref{fig:room-b}}) meeting rooms taken from the viewpoint of the entrance of the door. It shows the default interior design set-up of the rooms and the position of the chairs and tables.
 
 \begin{figure}[H]
 \begin{minipage}{.5\textwidth}
@@ -139,7 +139,7 @@ Photographs of the Lab42 building interior and exterior. The buildings's layout 
 \section{Prototype impressions}
 \label{appendix:prototype}
 
-Photographs of the prototype-creating phase showing the manufacturing of the 3D printed components, connecting the electronics, writing the firmware and digitally modeling the components of the hi-fi data physicalization. 
+Photographs of the prototype-creating phase showing the manufacturing of the pulley mechanism (see \hyperref[fig:prototype-pulley]{Figure \ref{fig:prototype-pulley}}), fabricating the leaves (see \hyperref[fig:prototype-leaves]{Figure \ref{fig:prototype-leaves}}) and mounting the electronics (see \hyperref[fig:prototype-board]{Figure \ref{fig:prototype-board}}) for the high fidelity data physicalization prototype.
 
 \begin{figure}[htbp]
     \centering
@@ -201,19 +201,19 @@ Photographs of the prototype-creating phase showing the manufacturing of the 3D 
 \section{system architecture of the prototype}
 \label{appendix:architecture}
 
-System architecture diagram which shows the Internet of Things (IoT) architecture of the prototype following the notion of edge computing using a 1) sensing layer, 2) networking layer, 3) processing layer and 4) application layer.
+System architecture diagram (see \hyperref[fig:system-diagram]{Figure \ref{fig:system-diagram}}) which shows the Internet of Things (IoT) architecture of the prototype following the notion of edge computing using a 1) sensing layer, 2) networking layer, 3) processing layer and 4) application layer.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\paperwidth]{system_architecture.jpg}
     \caption{System diagram that shows the technical set-up of the prototype}
-    \label{fig:timeline}
+    \label{fig:system-diagram}
 \end{figure}
 
 \section{Lab42 API sample data}
 \label{appendix:architecture}
 
-Screenshots of the internal Lab42 building API documentation. The API offers access to reliable and detailed sensor data installed throughout the Lab42 building at Science Park. Designed as a research resource for university employees and students. After authentication, the available sensors in a specific room can be gathered through a Room ID and data can be requested based on a specific date and timeframe.
+Screenshot of the internal Lab42 building API documentation (see \hyperref[fig:api-documentation]{Figure \ref{fig:api-documentation}}). The API offers access to reliable and detailed sensor data installed throughout the Lab42 building at Science Park. Designed as a research resource for university employees and students. The available sensors in a specific room can be gathered through a Room ID and data can be requested based on a specific date and timeframe.
 
 
 \begin{figure}[H]
@@ -227,7 +227,7 @@ Screenshots of the internal Lab42 building API documentation. The API offers acc
         \includegraphics[width=\linewidth]{lab42_api_response.png}
     \end{minipage}
     \caption{Screenshot of the Lab42 building API documentation and sample data output log}
-    \label{fig:timeline}
+    \label{fig:api-documentation}
 \end{figure}
 
 \newpage
@@ -235,7 +235,7 @@ Screenshots of the internal Lab42 building API documentation. The API offers acc
 \section{Air Quality Monitors sample data}
 \label{appendix:monitors}
 
-Sample data logs of the indoor air quality monitor devices installed in the small and large meeting rooms. These data logs were stored on-device during the data collection phase and exported for analysis. Both devices used the same polling rate but deferred in which sensory readings the device was capable of. Both have data and timestamps, Co2 concentrations, temperature and humidity which were used for the scope of this research.
+Sample data logs (see \hyperref[tab:room-a]{Table \ref{tab:room-a}} and \hyperref[tab:room-b]{Table \ref{tab:room-b}} ) of the indoor air quality monitor devices installed in the small and large meeting rooms. These data logs were stored on-device during the data collection phase and exported for analysis. Both devices used the same polling rate but deferred in which sensory readings the device was capable of. Both have data and timestamps, CO2 concentrations, temperature and humidity which were used for the scope of this research.
 
 \begin{table}[H]
     \centering
@@ -263,7 +263,7 @@ Sample data logs of the indoor air quality monitor devices installed in the smal
     }
     \vspace{10pt} 
     \caption{Sample data log of the Aircheq Touch Aero installed in the 'small' Room A} 
-    \label{tab:room-A}
+    \label{tab:room-a}
 \end{table}
 
 \begin{table}[H]
@@ -385,7 +385,7 @@ Exported text version of the questionnaire survey created in Qualtrics and distr
 \section{Survey data}
 \label{appendix:survey-data}
 
-Plots for specific questions of the survey questionnaire data exported from Qualtrics. Bar charts are created to show the distribution of answers for each question. The Likert scales are plotted as a stacked bar chart to show the distribution of scores.
+Plots for specific questions of the survey questionnaire data exported from Qualtrics. Bar charts are created to show the distribution of answers for each question (see \hyperref[fig:survey-bar-charts]{Figure \ref{fig:survey-bar-charts}}). The Likert scales are plotted as a stacked bar chart to show the scores (see \hyperref[fig:survey-stacked-Bars]{Figure \ref{fig:survey-stacked-bars}}).
 
 \begin{figure}[htbp]
     \centering
@@ -450,7 +450,7 @@ Plots for specific questions of the survey questionnaire data exported from Qual
 \section{Monitor data}
 \label{appendix:monitor-data}
 
-Plots of the indoor air quality monitor data logs. All graphs show the CO2 concentrations in either the small (Room A) or large (Room B) meeting rooms. The plots are subsets of the data logs which show interesting patterns and peaks based on the observed timeframe of the data collection phase.
+Plots of the indoor air quality monitor data logs (see \hyperref[fig:monitoring-single]{Figure \ref{fig:monitoring-single}}, \hyperref[fig:monitoring-multiple]{Figure \ref{fig:monitoring-multiple}}, \hyperref[fig:monitoring-heatmap]{Figure \ref{fig:monitoring-heatmap}}). All graphs show the CO2 concentrations in either the small (Room A) or large (Room B) meeting rooms. The plots are subsets of the data logs which show interesting patterns and peaks based on the observed timeframe of the data collection phase.
 
 \begin{figure}[htbp]
     \centering
@@ -514,7 +514,7 @@ Plots of the indoor air quality monitor data logs. All graphs show the CO2 conce
 \section{Evaluation Interviews}
 \label{appendix:evaluation}
 
-Semi-structured interview outline for the evaluation sessions conduceted in English where the prototype is installed in situ within a meeting room on the sixth floor of the Lab42 building. The questions and structure below served as a guideline for the interviews and follow-up questions were asked based on the responses of the participants.
+Semi-structured interview outline for the evaluation sessions conducted in English where the prototype is installed in situ within a meeting room on the sixth floor of the Lab42 building. The questions and structure below served as a guideline for the interviews and follow-up questions were asked based on the responses of the participants.
 
 \vspace{5pt}
 
@@ -706,7 +706,7 @@ Do you have any other final remarks you want to share about the prototype?  If n
 \section{Evaluation participant sample}
 \label{appendix:participants}
 
-Sample size of the participants who participated in the evaluation sessions with their expertise for demographic purposes.
+Sample size and demographics (see \hyperref[table:design_improvements]{Table \ref{table:design_improvements}}) of the participants who participated with their expertise and building activity.
 
 \begin{table}[h!]
 \centering
@@ -714,7 +714,7 @@ Sample size of the participants who participated in the evaluation sessions with
 \hline
 \textbf{Participant} & \textbf{Gender} & \textbf{Age} & \textbf{Expertise} & \textbf{Education} & \textbf{Days in building} & \textbf{Working Space} \\ 
 \hline
-P1 & Female & 35 & HCI/Researcher & PhD & 3 days a week & Lab Office Space \\ 
+P1 & Male & 35 & HCI/Researcher & PhD & 3 days a week & Lab Office Space \\ 
 \hline
 P2 & Male & 28 & Software Engineer & Master & 5 days a week & Shared Office \\ 
 \hline
@@ -733,7 +733,7 @@ P5 & Female & 25 & Research Assistant & Bachelor & 1 day a week & Lab Office Spa
 \section{Design improvements and recommendations}
 \label{appendix:improvements}
 
-Coding of design improvements and recommendations based on the thinking aloud of participants during the usability testing.
+Coding of main design improvements and recommendations (see \hyperref[table:participants]{Table \ref{table:participants}}) based on the feedback during the usability testing.
 
 
 \begin{table}[h!]
@@ -758,8 +758,7 @@ DI-4 & Simplified navigation menu & Provide a simplified and intuitive navigatio
 \section{Statement likert scores}
 \label{appendix:implications}
 
-Individual results of the statement scores based on the Likert-scale questionnaire in both a table with variances and bar chart plot.
-
+Individual results of the statement scores in a table (see \hyperref[table:participant_scores]{Table \ref{table:participant_scores}}) and bar chart plot (see \hyperref[fig:survey-statement-scores]{Figure \ref{fig:survey-statement-scores}}).
 
 \begin{table}[h!]
 \centering
@@ -798,7 +797,7 @@ P5 & 1 & 3 & 5 & 4 & 3 & 3.20 \\
 \section{Concept diagrams}
 \label{appendix:conceptdiagrams}
 
-Design diagrams of the brainstormed concepts in medium-fi sketches that show the component breakdown and interaction states.\\
+Design diagrams (see \hyperref[fig:concept-one]{Figure \ref{fig:concept-one}}, \hyperref[fig:concept-two]{Figure \ref{fig:concept-two}}, \hyperref[fig:concept-three]{Figure \ref{fig:concept-three}}) of the brainstormed concepts in medium-fi sketches that show the component breakdown and interaction states.\\
 
 \vspace{1em}
 
@@ -835,12 +834,13 @@ A moss-like structure on the wall with flower bulbs embedded. The flowers 'open 
     \label{fig:concept-three}
 \end{figure}
 
-\section{Academic sample case studies}
+\section{Academic Sample Case Studies}
 \label{appendix:academic}
 
-In the ideation phase and development of the concept models an exploration of 10 academic case studies were instrumental in informing the design of the prototype. \hyperref[table:academic-cases]{Table \ref{table:academic-cases}} provides an overview of all these case studies.
+In the ideation phase and development of the concept models, an exploration of 10 academic case studies were instrumental in informing the design of the prototype. \hyperref[table:academic-cases]{Table \ref{table:academic-cases}} provides an overview of all these case studies.
 
 \begin{table}[htbp]
+\centering
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
 \textbf{Nr.} & \textbf{Sample} & \textbf{Author(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
@@ -849,72 +849,64 @@ In the ideation phase and development of the concept models an exploration of 10
 3 & Dataponics & Robert Cercós et al. & 2016 & DEG & \href{http://dataphys.org/list/dataponics-human-vegetal-play/}{Dataponics} \\ \hline
 4 & Garden of Eden & Thorsten Kiesl et al. & 2007 & UFG & \href{http://dataphys.org/list/garden-of-eden/}{Garden of Eden} \\ \hline
 5 & Pudica & Olivia Seow et al. & 2022 & MIT & \href{https://trackr-media.tangiblemedia.org/publishedmedia/Papers/715-MTA0N/Published/PDF}{Pudica} \\ \hline
-6 & ComfortBox & Hamed S. Alavi et al. & 2017 & IFIP & \href{https://doi.org/10.1007/978-3-319-67687-6_16}{ComfortBox} 
-\\ \hline
-7 & ComFeel & Ugo Sassi et al. & 2020 & ACM & \href{https://dl.acm.org/doi/10.1145/3432234}{ComFeel} 
-\\ \hline
+6 & ComfortBox & Hamed S. Alavi et al. & 2017 & IFIP & \href{https://doi.org/10.1007/978-3-319-67687-6_16}{ComfortBox} \\ \hline
+7 & ComFeel & Ugo Sassi et al. & 2020 & ACM & \href{https://dl.acm.org/doi/10.1145/3432234}{ComFeel} \\ \hline
 8 & WindowWall & Patrick Bader et al. & 2020 & ACM & \href{https://doi.org/10.1145/3310275}{WindowWall} \\ \hline
-9 & Ambient Influence & Yvonne Rogers et al. & 2010 & ACM & \href{https://dl.acm.org/doi/10.1145/1864349.1864372}{Ambient Influence} 
-\\ \hline
-10 & Hilo-wear & Shailin Zong et al. & 2020 & CHI & \href{https://dl.acm.org/doi/10.1145/3334480.3382813}{Hilo-wear} 
-\\ \hline
+9 & Ambient Influence & Yvonne Rogers et al. & 2010 & ACM & \href{https://dl.acm.org/doi/10.1145/1864349.1864372}{Ambient Influence} \\ \hline
+10 & Hilo-wear & Shailin Zong et al. & 2020 & CHI & \href{https://dl.acm.org/doi/10.1145/3334480.3382813}{Hilo-wear} \\ \hline
 \end{tabularx}
-\centering
 \caption{Overview of the 10 academic case studies used for the ideation phase and concept models.}
 \label{table:academic-cases}
 \end{table}
 
 \newpage
 
-\section{Non-academic sample case studies}
+\section{Non-academic Sample Case Studies}
 \label{appendix:nonacademic}
 
-In the ideation phase and development of the concept models an exploration of 28 non-academic case studies were instrumental in informing the design of the prototype. \hyperref[tab:non-academic-cases]{Table \ref{tab:non-academic-cases}} provides an overview of all these case studies.
+In the ideation phase and development of the concept models, an exploration of 24 non-academic case studies were instrumental in informing the design of the prototype. \hyperref[tab:non-academic-cases]{Table \ref{tab:non-academic-cases}} provides an overview of all these case studies.
 
 \begin{table}[htbp]
+\centering
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
 \textbf{Nr.} & \textbf{Sample} & \textbf{Creator(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
-1 & Birdie Design & Birdie Design & 2024 & non-academic & \href{https://www.bir.die/}{www.bir.die} \\ \hline
-2 & Fields of Informality & Zhestkov & 2024 & non-academic & \href{https://www.artco.m.com/}{www.artco.m} \\ \hline
-3 & Tree of Ténéré & Studio Drift & 2024 & non-academic & \href{https://studiodr.ift.com/}{www.studiodr} \\ \hline
-4 & Kinetic Sculpture & ART+COM & 2024 & non-academic & \href{https://artco.m.com/}{www.artco.m} \\ \hline
-5 & Electro Magnetic Field & Unknown & 2024 & non-academic & - \\ \hline
-6 & Microsurgical Robot & Unknown & 2024 & non-academic & - \\ \hline
-7 & Wind 3.0 & Studio Roosegaarde & 2024 & non-academic & \href{https://www.studior.oo/}{www.studior} \\ \hline
-8 & Floralis Generica & Eduardo Catalano & 2024 & non-academic & - \\ \hline
-9 & Lucid Stead & Phillip K. Smith III & 2024 & non-academic & - \\ \hline
-10 & Flylight & Studio Drift & 2024 & non-academic & - \\ \hline
-11 & Spectra 2 & FIELD & 2024 & non-academic & - \\ \hline
-12 & Meadow & Studio Drift & 2024 & non-academic & - \\ \hline
-13 & Wind Pavilion & Studio Roosegaarde & 2024 & non-academic & - \\ \hline
-14 & Pet Lamp & Álvaro Catalán & 2024 & non-academic & - \\ \hline
-15 & Living map & Unknown & Unknown & non-academic & \href{https://www.behance.net/gallery/68572509/LIVING-MAP}{Living map} \\ \hline
-16 & Harassment plants & Unknown & Unknown & non-academic & \href{https://luizaugustomm.github.io/pages/harassment-plants.html}{Harassment plants} \\ \hline
-17 & Popsicles of Pollution & Unknown & Unknown & non-academic & \href{https://www.theguardian.com/cities/gallery/2017/sep/01/popsicles-pollution-ice-lollies-taiwan-taipei-contaminated-waterways}{Popsicles of Pollution} \\ \hline
-18 & Yellow Dust & Unknown & Unknown & non-academic & \href{http://yellowdust.intheair.es/}{Yellow Dust} \\ \hline
-19 & Touching air & Unknown & Unknown & non-academic & \href{https://www.stefanieposavec.com/airtransformed}{Touching air} \\ \hline
-20 & Physical Weather Display & Unknown & Unknown & non-academic & \href{https://www.boredpanda.com/weather-forecast-box-tempescope-ken-kawamoto/}{Physical Weather Display} \\ \hline
-21 & Inequalities Quipu & Unknown & Unknown & non-academic & \href{https://tuteja.info/inequalities-quipu/}{Inequalities Quipu} \\ \hline
-22 & Summer in the city & Unknown & Unknown & non-academic & \href{https://www.carolabartsch.ch/en/projects/dataviz}{Summer in the city} \\ \hline
-23 & WeatherWindow & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/weatherwindow/}{WeatherWindow} \\ \hline
-24 & Point cloud & Unknown & Unknown & non-academic & \href{https://www.jamesleng.net/pointcloud/}{Point cloud} \\ \hline
-25 & Tele-present water & Unknown & Unknown & non-academic & \href{https://www.dwbowen.com/telepresentwater/}{Tele-present water} \\ \hline
-26 & Real-time Warning & Unknown & Unknown & non-academic & \href{https://vimeo.com/35520114}{Real-time Warning} \\ \hline
-27 & airFIELD & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/ecloud-airfield-ambient-airport-visualizations/}{airFIELD} \\ \hline
-28 & Shanghai Spheres & Unknown & Unknown & non-academic & \href{https://www.taittowers.com/work?sort=newest}{Shanghai Spheres} \\ \hline
+1 & Birdie Design & Birdie Design & 2024 & non-academic & \href{https://www.birdie.design/}{Birdie Design} \\ \hline
+2 & Tree of Ténéré & Studio Drift & 2017 & non-academic & \href{https://studiodrift.com/work/tree-of-tenere/}{Studio Drift} \\ \hline
+3 & Petal Clouds & ART+COM & 2018 & non-academic & \href{https://artcom.de/en/?project=petalclouds}{ART+COM} \\ \hline
+4 & Electro Magnetic Field & Jennifer Allora & 2022 & non-academic & \href{https://arkive.net/gallery/electromagnetic-field}{Arkive} \\ \hline
+5 & Wind 3.0 & Studio Roosegaarde & 2011 & non-academic & \href{https://www.studioroosegaarde.net/project/wind-3-0}{Studio Roosegaarde} \\ \hline
+6 & Floralis Generica & Eduardo Catalano & 2002 & non-academic & \href{https://en.wikipedia.org/wiki/Floralis_Generica}{Plaza Unidas} \\ \hline
+7 & Flylight & Studio Drift & 2013 & non-academic & \href{https://studiodrift.com/work/flylight/}{Studio Drift} \\ \hline
+8 & Spectra-2 & FIELD.IO & 2015 & non-academic & \href{https://field.io/explorations/spectra-2}{FIELD.IO} \\ \hline
+9 & Meadow & Studio Drift & 2023 & non-academic & \href{https://studiodrift.com/work/meadow/}{Studio Drift}  \\ \hline
+10 & Pet Lamp & Álvaro Catalán & 2024 & non-academic & \href{https://www.petlamp.org/}{Pet Lamp} \\ \hline
+11 & Living map & Sigitas Guzauskas & 2018 & non-academic & \href{https://www.behance.net/gallery/68572509/LIVING-MAP}{Living map} \\ \hline
+12 & Harassment plants & Nazareno Andrade & 2022 & non-academic & \href{https://luizaugustomm.github.io/pages/harassment-plants.html}{Harassment plants} \\ \hline
+13 & Popsicles of Pollution & Hung Yi-Chen, & 2017 & non-academic & \href{https://www.theguardian.com/cities/gallery/2017/sep/01/popsicles-pollution-ice-lollies-taiwan-taipei-contaminated-waterways}{Popsicles of Pollution} \\ \hline
+14 & Yellow Dust & C+arquitectos & 2017 & non-academic & \href{http://yellowdust.intheair.es/}{Yellow Dust} \\ \hline
+15 & Touching air & Miriam Quick & 2015 & non-academic & \href{https://www.stefanieposavec.com/airtransformed}{Touching air} \\ \hline
+16 & Physical Weather Display & Ken Kawamoto & 2015 & non-academic & \href{https://www.boredpanda.com/weather-forecast-box-tempescope-ken-kawamoto/}{Physical Weather Display} \\ \hline
+17 & Inequalities Quipu & Ewa Tuteja & 2021 & non-academic & \href{https://tuteja.info/inequalities-quipu/}{Inequalities Quipu} \\ \hline
+18 & Summer in the city & Carola Bartsch & 2015 & non-academic & \href{https://www.carolabartsch.ch/en/projects/dataviz}{Summer in the city} \\ \hline
+19 & WeatherWindow & Tim Dye & 2014 & non-academic & \href{http://dataphys.org/list/weatherwindow/}{WeatherWindow} \\ \hline
+20 & Point cloud & James Leng & 2012 & non-academic & \href{https://www.jamesleng.net/pointcloud/}{Point cloud} \\ \hline
+21 & Tele-present water & David Bowen & 2011 & non-academic & \href{https://www.dwbowen.com/telepresentwater/}{Tele-present water} \\ \hline
+22 & Real-time Warning & Rodrigo Medeiros & 2012 & non-academic & \href{https://vimeo.com/35520114}{Real-time Warning} \\ \hline
+23 & airFIELD & Dan Goods & 2012 & non-academic & \href{http://dataphys.org/list/ecloud-airfield-ambient-airport-visualizations/}{airFIELD} \\ \hline
+24 & Shanghai Spheres & Michael Tait & 2018 & non-academic & \href{https://www.taittowers.com/work?sort=newest}{Shanghai Spheres} \\ \hline
 \end{tabularx}
-\centering
-\caption{Overview of the 28 non-academic case studies used for the ideation phase and concept models.}
+\caption{Overview of the 24 non-academic case studies used for the ideation phase and concept models.}
 \label{tab:non-academic-cases}
 \end{table}
 
-\section{fabrication Techniques}
+\section{Fabrication Techniques}
 \label{appendix:fabrication}
 
-In the ideation phase and development of the concept models an exploration of 4 academic and 6 non-academic case studies were instrumental in informing the fabrication of the prototype. \hyperref[tab:fabrication-cases]{Table \ref{tab:fabrication-cases}} provides an overview of all these case studies.
+In the ideation phase and development of the concept models, an exploration of 4 academic and 6 non-academic case studies were instrumental in informing the fabrication of the prototype. \hyperref[tab:fabrication-cases]{Table \ref{tab:fabrication-cases}} provides an overview of all these case studies.
 
 \begin{table}[!htbp]
+\centering
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
 \textbf{Nr.} & \textbf{Sample} & \textbf{Author(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
@@ -929,8 +921,8 @@ In the ideation phase and development of the concept models an exploration of 4 
 9 & Multiuse Flexible Fabric & Posix & 2024 & non-academic & \href{https://www.printables.com/model/88579-multiuse-flexible-fabric}{Printables} \\ \hline
 10 & Leaf Decorative Holder & Trilobyte3D & 2022 & non-academic & \href{https://www.printables.com/model/230363-leaf-drink-coasters-with-decorative-plant-holder}{Printables} \\ \hline
 \end{tabularx}
-\centering
 \caption{Overview of the 4 academic and 6 non-academic sample case studies used as inspiration for fabrication of the prototype.}
 \label{tab:fabrication-cases}
 \end{table}
+
 \end{appendices}

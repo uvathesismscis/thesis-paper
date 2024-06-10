@@ -45,39 +45,39 @@ In the spirit of Open Access Research \footnote{https://uba.uva.nl/en/support/re
 \section{Floorplan and lab set-up}
 \label{appendix:floorplan}
 
-A diagram providing an overview of the technical lab-setup of the IAQ monitors
+A floorplan diagram providing an overview of the technical lab setup of the small (Room A) and large (Room B) meeting rooms used for indoor air quality monitoring. The floorplan indicates the position the monitors are installed and the position of doors and windows.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\paperwidth]{meeting_rooms_floorplan.jpg}
-    \caption{Floorplan of Room A and B with the position of the monitor devices installed to manufacturer specifications}
-    \label{fig:timeline}
+    \caption{Floorplan of Room A and B, monitors installed as of manufacturer specifications}
+    \label{fig:floorplan}
 \end{figure}
 
 \section{Meeting room impressions}
 \label{appendix:meetings}
 
-Photographs of the meeting rooms used for the lab-setup.
+Photographs of the small (Room A) and large (Room B) meeting rooms taken from the viewpoint of the entrance of the door. It shows the default interior design set-up of the rooms and the position of the chairs and tables.
 
 \begin{figure}[H]
 \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[width=85mm,height=70mm]{photograph-room-a.jpeg}
     \caption{The 'smaller'(18$m2$) space labeled Room A}
-    \label{fig:timeline}
+    \label{fig:room-a}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[width=85mm,height=70mm]{photograph-room-b.jpeg}
     \caption{The 'larger' (48$m2$) space labeled Room B}
-    \label{fig:timeline}
+    \label{fig:room-b}
 \end{minipage}%
 \end{figure}
 
 \section{Building impressions}
 \label{appendix:building}
 
-The buildings's layout is strategically organized into different zones, each serving various functions, ranging from quiet individual work to spaces that allow for collaborative work. Lecture halls, learning rooms, and open learning spaces make up the two lower floors, with the upper four being primarily assigned to the university academic staff, meeting rooms, and external offices. The overarching interior theme in the design revolves around 'tech' and 'nature' aiming to cultivate a fresh, light, and warm comfortable ambiance. 
+Photographs of the Lab42 building interior and exterior. The buildings's layout is strategically organized into different zones, each serving various functions, ranging from quiet individual work to spaces that allow for collaborative work. Lecture halls, learning rooms, and open learning spaces make up the two lower floors, with the upper four being primarily assigned to the university academic staff, meeting rooms, and external offices. The overarching interior theme in the design revolves around 'tech' and 'nature' aiming to cultivate a fresh, light, and warm comfortable ambiance. 
 
 \begin{figure}[htbp]
     \centering
@@ -139,7 +139,7 @@ The buildings's layout is strategically organized into different zones, each ser
 \section{Prototype impressions}
 \label{appendix:prototype}
 
-Photographs of the prototype-creating phase showing the manufacturing, connecting the electronics, writing the firmware and digitally modeling the components of the hi-fi data physicalization. 
+Photographs of the prototype-creating phase showing the manufacturing of the 3D printed components, connecting the electronics, writing the firmware and digitally modeling the components of the hi-fi data physicalization. 
 
 \begin{figure}[htbp]
     \centering
@@ -147,17 +147,17 @@ Photographs of the prototype-creating phase showing the manufacturing, connectin
         \centering
         \includegraphics[width=\textwidth]{prototype_pulley_printing.jpg}
         \caption{Cleaning and sanding the 3D printed pulleys}
-        \label{fig:image1}
+        \label{fig:pulley-sanding}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{prototype_pulley_servo.jpg}
         \caption{Attaching pulleys to servo motors using motor arms}
-        \label{fig:image2}
+        \label{fig:pulley-servo}
     \end{subfigure}
     \caption{The pull-up and down mechanism of the hanging planter strings}
-    \label{fig:grid}
+    \label{fig:prototype-pulley}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -166,17 +166,17 @@ Photographs of the prototype-creating phase showing the manufacturing, connectin
         \centering
         \includegraphics[width=\textwidth]{prototype_printing_leaves.jpg}
         \caption{FDM 3D printer printing the textile leaves}
-        \label{fig:image1}
+        \label{fig:printing-leaves}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{prototype_rope_leaves.jpg}
         \caption{Attaching the leaves with fishing line }
-        \label{fig:image2}
+        \label{fig:attaching-leaves}
     \end{subfigure}
     \caption{Hanging planter strings attached to the paracord}
-    \label{fig:grid}
+    \label{fig:prototype-leaves}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -185,36 +185,35 @@ Photographs of the prototype-creating phase showing the manufacturing, connectin
         \centering
         \includegraphics[width=\textwidth]{prototype_pulley_mechanism.jpg}
         \caption{Pulley mechanism installed with rope guides}
-        \label{fig:image1}
+        \label{fig:pulley-small}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{prototype_wooden_board.jpg}
         \caption{Attaching the electronics to the wooden board}
-        \label{fig:image2}
+        \label{fig:pulley-large}
     \end{subfigure}
     \caption{Rear view of the prototype with all components mounted}
-    \label{fig:grid}
+    \label{fig:prototype-board}
 \end{figure}
 
-\section{IoT architecture of the prototype}
+\section{system architecture of the prototype}
 \label{appendix:architecture}
 
-System diagram which shows the IoT architecture of the prototype.
+System architecture diagram which shows the Internet of Things (IoT) architecture of the prototype following the notion of edge computing using a 1) sensing layer, 2) networking layer, 3) processing layer and 4) application layer.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\paperwidth]{system_architecture.jpg}
+    \includegraphics[width=0.65\paperwidth]{system_architecture.jpg}
     \caption{System diagram that shows the technical set-up of the prototype}
     \label{fig:timeline}
 \end{figure}
 
-\section{Existing Building API sample data}
+\section{Lab42 API sample data}
 \label{appendix:architecture}
 
-The API offers access to reliable and detailed sensor data installed throughout the L42 building at Science Park. Designed as a research resource for university employees and students. After authentication, the available sensors in a specific room can be gathered through a Room ID.
-
+Screenshots of the internal Lab42 building API documentation. The API offers access to reliable and detailed sensor data installed throughout the Lab42 building at Science Park. Designed as a research resource for university employees and students. After authentication, the available sensors in a specific room can be gathered through a Room ID and data can be requested based on a specific date and timeframe.
 
 
 \begin{figure}[H]
@@ -236,7 +235,7 @@ The API offers access to reliable and detailed sensor data installed throughout 
 \section{Air Quality Monitors sample data}
 \label{appendix:monitors}
 
-Sample data log of the monitor devices.
+Sample data logs of the indoor air quality monitor devices installed in the small and large meeting rooms. These data logs were stored on-device during the data collection phase and exported for analysis. Both devices used the same polling rate but deferred in which sensory readings the device was capable of. Both have data and timestamps, Co2 concentrations, temperature and humidity which were used for the scope of this research.
 
 \begin{table}[H]
     \centering
@@ -259,13 +258,10 @@ Sample data log of the monitor devices.
         2024/04/03 & 10:20 & 587 & 21'C & 39\% & 0 & 0 & 0 & 228 & 99.97 & 0 \\
         2024/04/03 & 10:19 & 580 & 21'C & 39\% & 0 & 0 & 0 & 230 & 99.97 & 0 \\
         2024/04/03 & 10:18 & 580 & 21'C & 39\% & 0 & 0 & 0 & 232 & 99.97 & 0 \\
-        2024/04/03 & 10:17 & 578 & 21'C & 39\% & 1 & 1 & 1 & 234 & 99.97 & 0 \\
-        2024/04/03 & 10:16 & 574 & 21'C & 39\% & 0 & 0 & 0 & 237 & 99.97 & 0 \\
-        2024/04/03 & 10:15 & 569 & 21'C & 39\% & 0 & 0 & 0 & 237 & 99.97 & 0 \\
         \bottomrule
     \end{tabular}%
     }
-    \vspace{10pt} % Adjust the amount of whitespace as needed
+    \vspace{10pt} 
     \caption{Sample data log of the Aircheq Touch Aero installed in the 'small' Room A} 
     \label{tab:room-A}
 \end{table}
@@ -294,7 +290,7 @@ Sample data log of the monitor devices.
         10/04/2024 & 14:30:00 & 21.089 & 28.912 & 2.358 & 681.000 \\
         \bottomrule
     \end{tabular}%
-    }\vspace{10pt} % Adjust the amount of whitespace as needed
+    }\vspace{10pt} 
     \caption{Sample data log of the Atal ATU-CT ClimaTrend installed in the 'large' Room B} 
     \label{tab:room-b}
 \end{table}
@@ -303,9 +299,9 @@ Sample data log of the monitor devices.
 \section{Questionnaire survey (POE)}
 \label{appendix:survey}
 
-Exported text version of the questionnaire survey created in Qualtrics and distributed using handouts on QR codes.
+Exported text version of the questionnaire survey created in Qualtrics and distributed using handouts with QR codes.
 
-\vspace{10pt} % Adjust the length as needed
+\vspace{10pt} 
 
 \textbf{Introduction:}
 \textit{Hi! We at the Digital Interactions Lab (DIL) are researching indoor environments, focusing on Indoor Air Quality (IAQ) within smart buildings like Lab42, for a Master Thesis. This survey takes an average of $\sim$3 minutes to complete and comprises questions about your overall comfort and awareness of Indoor Air Quality (IAQ).}\\
@@ -313,7 +309,7 @@ Exported text version of the questionnaire survey created in Qualtrics and distr
 \textbf{Informed Consent:}
 \textit{The survey is anonymous and collects data on environmental experiences and approximate building location for future research and publication. Participation is voluntary, and if you decide that you do not want to participate after you have completed it, please contact us. Principal researcher: BSc D. de Vries - danny.de.vries@student.uva.nl Supervisor(s): Shruti Rao PhD Candidate - s.rao@uva.nl Supervisor(s): Dr. H. Seiied Alavi PhD - ha.alavi@uva.nl Thank you for your valuable time and for participating in our survey!}
 
-\vspace{10pt} % Adjust the length as needed
+\vspace{10pt} 
 
 \textbf{Q1: Location}- Where are you currently located within the Lab42 building? \textit{Multiple-choice, one option possible}
 
@@ -389,7 +385,7 @@ Exported text version of the questionnaire survey created in Qualtrics and distr
 \section{Survey data}
 \label{appendix:survey-data}
 
-Plots of the results of the survey data exported from Qualtrics.
+Plots for specific questions of the survey questionnaire data exported from Qualtrics. Bar charts are created to show the distribution of answers for each question. The Likert scales are plotted as a stacked bar chart to show the distribution of scores.
 
 \begin{figure}[htbp]
     \centering
@@ -397,30 +393,30 @@ Plots of the results of the survey data exported from Qualtrics.
         \centering
         \includegraphics[width=\textwidth]{activity_bar_chart.png}
         \caption{Average use of the building for various activities}
-        \label{fig:image1}
+        \label{fig:survey_building}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=\textwidth]{occupancy_bar_chart.png}
         \caption{Description of occupancy crowdedness}
-        \label{fig:image2}
+        \label{fig:survey-occupancy}
     \end{subfigure}
     \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=\textwidth]{cognitive_symptomps.png}
-        \caption{Cognitive symptons based on the air quality}
-        \label{fig:image1}
+        \caption{Cognitive symptoms based on the air quality}
+        \label{fig:survey-cognitive}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=\textwidth]{health_symptomps.png}
-        \caption{Health symptons based on the air quality}
-        \label{fig:image2}
+        \caption{Health symptoms based on the air quality}
+        \label{fig:survey-health}
     \end{subfigure}    
-    \caption{Bar charts of the survey questions about activity, occupancy, health and cognitive symptons}
-    \label{fig:grid}
+    \caption{Bar charts of the survey questions about activity, occupancy, health and cognitive symptoms}
+    \label{fig:survey-bar-charts}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -428,25 +424,25 @@ Plots of the results of the survey data exported from Qualtrics.
     \begin{subfigure}{0.18\textwidth}
         \centering
         \includegraphics[width=\textwidth]{iaq_awareness.png}
-        \caption{Awaneress}
-        \label{fig:image1}
+        \caption{IAQ Awareness}
+        \label{fig:survey-awareness}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.18\textwidth}
         \centering
         \includegraphics[width=\textwidth]{iaq_perceived.png}
-        \caption{Perceived}
-        \label{fig:image2}
+        \caption{IAQ Perceived}
+        \label{fig:survey-perceived}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.18\textwidth}
         \centering
         \includegraphics[width=\textwidth]{iaq_satisfaction.png}
-        \caption{Satisfaction}
-        \label{fig:image2}
+        \caption{IAQ Satisfaction}
+        \label{fig:survey-satisfaction}
     \end{subfigure}    
     \caption{Stacked bar charts of the Likert-scales on IAQ awareness, perceived and satisfaction}
-    \label{fig:grid}
+    \label{fig:survey-stacked-bars}
 \end{figure}
 
 \newpage
@@ -454,61 +450,63 @@ Plots of the results of the survey data exported from Qualtrics.
 \section{Monitor data}
 \label{appendix:monitor-data}
 
+Plots of the indoor air quality monitor data logs. All graphs show the CO2 concentrations in either the small (Room A) or large (Room B) meeting rooms. The plots are subsets of the data logs which show interesting patterns and peaks based on the observed timeframe of the data collection phase.
+
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-a-monitor-meeting-spike-single.png}
         \caption{Single meeting CO2 concentrations in Room A}
-        \label{fig:image1}
+        \label{fig:monitor-single-a}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-b-monitor-meeting-spike-single.png}
         \caption{Single meeting CO2 concentrations in Room B}
-        \label{fig:image2}
+        \label{fig:monitor-single-b}
     \end{subfigure}
     \caption{IAQ monitoring CO2 concentrations of a single sample meeting based on the start and end time of the meeting}
-    \label{fig:grid}
+    \label{fig:monitoring-single}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-a-monitor-meeting-spike-day.png}
         \caption{A day of meetings CO2 concentrations in Room A}
-        \label{fig:image1}
+        \label{fig:monitor-multiple-a}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-b-monitor-meeting-spike-day.png}
         \caption{A day of meetings CO2 concentrations in Room B}
-        \label{fig:image2}
+        \label{fig:monitor-multiple-b}
     \end{subfigure}
     \caption{IAQ monitoring CO2 concentrations of a sample day meeting based on the opening hours of the building}
-    \label{fig:grid}
+    \label{fig:monitoring-multiple}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-a-monitor-heatmap.png}
         \caption{Heatmap of ten days of monitoring in Room A}
-        \label{fig:image1}
+        \label{fig:monitor-heatmap-a}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.48\textwidth}
+    \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-b-monitor-heatmap.png}
         \caption{Heatmap of ten days of monitoring in Room B}
-        \label{fig:image2}
+        \label{fig:monitor-heatmap-b}
     \end{subfigure}
     \caption{IAQ monitoring heatmap CO2 concentrations of the sample ten days based on the opening hours of the building}
-    \label{fig:grid}
+    \label{fig:monitoring-heatmap}
 \end{figure}
 
 \newpage
@@ -516,7 +514,7 @@ Plots of the results of the survey data exported from Qualtrics.
 \section{Evaluation Interviews}
 \label{appendix:evaluation}
 
-The evaluation session was conducted in English. The questions and structure below served as a guideline for the interviews. It was a semi-structured interview so the questions acted as guiding questions only. The first part of the evaluation session was done sitting at the meeting room table.
+Semi-structured interview outline for the evaluation sessions conduceted in English where the prototype is installed in situ within a meeting room on the sixth floor of the Lab42 building. The questions and structure below served as a guideline for the interviews and follow-up questions were asked based on the responses of the participants.
 
 \vspace{5pt}
 
@@ -577,7 +575,7 @@ Your participation will be fully anonymized. If you agree, I will record this me
     \captionsetup{justification=raggedright,singlelinecheck=false}
     \raggedright \textbf{Question-set 3:} \textit{Notion of Indoor Air Quality (IAQ)} \\
     \label{tab:column_widths}
-    \raggedright \textbf{Introduction:} Lastly some question about your notion of indoor air quality as a baseline.
+    \raggedright \textbf{Introduction:} Lastly some questions about your notion of indoor air quality as a baseline.
     \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
         \hline
         \textbf{Description} & \textbf{Questions (open-ended)} \\
@@ -586,9 +584,9 @@ Your participation will be fully anonymized. If you agree, I will record this me
         \newline
         \textbf{Q12:} How do you perceive the IAQ in this space? \\
         \hline
-        Cognitive and health & \textbf{Q13:} Have you ever experienced cognitive symptons related to IAQ in a meeting room? 
+        Cognitive and health & \textbf{Q13:} Have you ever experienced cognitive symptoms related to IAQ in a meeting room? 
         \newline
-        \textbf{Q14:} Have you ever experienced health symptons related to IAQ in a meeting room?  \\
+        \textbf{Q14:} Have you ever experienced health symptoms related to IAQ in a meeting room?  \\
         \hline
     \end{tabularx}
 \end{table}
@@ -598,13 +596,12 @@ Your participation will be fully anonymized. If you agree, I will record this me
 \section{Usability tests}
 \label{appendix:usability}
 
-For the usability tests we shifted attention towards the prototype that was installed in the meeting room. In all sessions the researcher and occupants stood up and walked towards the prototype. The occupants were allowed to touch the prototype and during the questions the researched changed the state of the prototype so the live movement could be observed.
-
+For the usability tests, we shifted attention towards the prototype that was installed in the meeting room. In all sessions, the researcher and occupants stood up and walked towards the prototype. The occupants were allowed to touch the prototype and observe its movements.
 \vspace{5pt}
 
 \textit{\textbf{Introduction:}}
 
-We will move on to testing the prototype. Please imagine you are an occupant having a meeting in the space (meeting room) we are currently in. As you might have noticed on the wall hang from the ceiling, a prototype of a physical artefact is hung up.\\
+We will move on to testing the prototype. Please imagine you are an occupant having a meeting in the space (meeting room) we are currently in. As you might have noticed on the wall hanging from the ceiling, a prototype of a physical artifact is hung up.\\
 
 \begin{table}[htbp]
     \captionsetup{justification=raggedright,singlelinecheck=false}
@@ -615,13 +612,13 @@ We will move on to testing the prototype. Please imagine you are an occupant hav
         \hline
         \textbf{Description} & \textbf{Questions (open-ended)} \\
         \hline
-        Description of prototype & \textbf{Q1:} Could you describe in your own words what the physical artefact is? \\
+        Description of prototype & \textbf{Q1:} Could you describe in your own words what the physical artifact is? \\
         \hline
         Look and feel & 
-        \textbf{Q2:} What do you think of the overall design of the physical artefact? \\
+        \textbf{Q2:} What do you think of the overall design of the physical artifact? \\
         \hline
         Use of materials & 
-        \textbf{Q3:} What do you think of the materials the physical artefact is made of? \\
+        \textbf{Q3:} What do you think of the materials the physical artifact is made of? \\
         \hline
         Communicative properties & 
         \textbf{Q4:} What properties do you think the data physicalization communicates?\\
@@ -634,7 +631,7 @@ We will move on to testing the prototype. Please imagine you are an occupant hav
 \begin{table}[htbp]
     \captionsetup{justification=raggedright,singlelinecheck=false}
     \raggedright \textbf{Question-set 2:} \textit{Self-reflection of data insight (memorability)} \\
-    \raggedright \textbf{Introduction:} I want to gain insight into how likely you are to take preventitive action based on data insights.
+    \raggedright \textbf{Introduction:} I want to gain insight into how likely you are to take preventative action based on data insights.
     \label{tab:column_widths}
     \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
         \hline
@@ -642,7 +639,7 @@ We will move on to testing the prototype. Please imagine you are an occupant hav
         \hline
         Behavourial change & 
         \textbf{Q5:} How and to what extent do you think your awareness of IAQ changes? \\
-        & \textbf{Q6:} How willingly are you to take preventitive action based on the data insights the artefact provides? \\
+        & \textbf{Q6:} How willingly are you to take preventative action based on the data insights the artifact provides? \\
         \hline
     \end{tabularx}
 \end{table}
@@ -671,7 +668,9 @@ We will move on to testing the prototype. Please imagine you are an occupant hav
 \section{Effectiveness scores}
 \label{appendix:effectiveness}
 
-That concluded the usability test, thank you for thinking out loud and suggesting improvements. The last part is an online score rating statements and hypothesis about the prototype. The occupant and researcher sit down on the table again and the occupant is handed an iPad to fill-in an online questionnaire on Qualtrics with scores.
+The occupant and researcher sit down on the table again and the occupant is handed the computer or phone of the researcher to fill in an online statement questionnaire on Qualtrics with Likert scales. \\
+
+\raggedright \textit{\textbf{Introduction:}} \\ The last part is an online score rating statement and hypothesis about the prototype. 
 
 \vspace{5pt}
 
@@ -707,6 +706,8 @@ Do you have any other final remarks you want to share about the prototype?  If n
 \section{Evaluation participant sample}
 \label{appendix:participants}
 
+Sample size of the participants who participated in the evaluation sessions with their expertise for demographic purposes.
+
 \begin{table}[h!]
 \centering
 \begin{tabular}{| p{2cm} | p{1.5cm} | p{1cm} | p{3cm} | p{2cm} | p{3cm} | p{3cm} |}
@@ -728,8 +729,11 @@ P5 & Female & 25 & Research Assistant & Bachelor & 1 day a week & Lab Office Spa
 \label{table:participants}
 \end{table}
 
-\section{Design implications and recommendations}
-\label{appendix:implications}
+
+\section{Design improvements and recommendations}
+\label{appendix:improvements}
+
+Coding of design improvements and recommendations based on the thinking aloud of participants during the usability testing.
 
 
 \begin{table}[h!]
@@ -753,6 +757,8 @@ DI-4 & Simplified navigation menu & Provide a simplified and intuitive navigatio
 
 \section{Statement likert scores}
 \label{appendix:implications}
+
+Individual results of the statement scores based on the Likert-scale questionnaire in both a table with variances and bar chart plot.
 
 
 \begin{table}[h!]
@@ -782,18 +788,19 @@ P5 & 1 & 3 & 5 & 4 & 3 & 3.20 \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\paperwidth]{statement-scores-per-statement.png}
+    \includegraphics[width=0.55\paperwidth]{statement-scores-per-statement.png}
     \caption{5-point likert-scales of participants per statement}
-    \label{fig:timeline}
+    \label{fig:survey-statement-scores}
 \end{figure}
-
 
 \newpage
 
 \section{Concept diagrams}
 \label{appendix:conceptdiagrams}
 
-Design diagrams of the brainstormed concepts in medium-fi sketches that show the component breakdown and interaction states.
+Design diagrams of the brainstormed concepts in medium-fi sketches that show the component breakdown and interaction states.\\
+
+\vspace{1em}
 
 \textbf{Concept-1: Desk Planter (Aspen)}\\
 A desk planter or tree in the corner of the room with soil in it.Follows the organic growth of a 'seed' of a flower or tree from seed to sprouts to full flower. The better the air quality the more or faster the plant grows. The movement of the leaves can indicate the wind.
@@ -802,8 +809,8 @@ A desk planter or tree in the corner of the room with soil in it.Follows the org
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\paperwidth]{Concept-1_Aspen_Design_Diagram.jpg}
-    \caption{Design diagram of Concept-2}
-    \label{fig:timeline}
+    \caption{Design diagram of concept one (Aspen)}
+    \label{fig:concept-one}
 \end{figure}
 
 \textbf{Concept-2: Hanging Sculpture (Bluebird)}\\
@@ -812,8 +819,8 @@ A hanging planter-type set-up with strings that 'grow' from the ceiling. Fresh a
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\paperwidth]{Concept-2_Bluebird_Design_Diagram.jpg}
-    \caption{Design diagram of Concept-2}
-    \label{fig:timeline}
+    \caption{Design diagram of concept two (Bluebird)}
+    \label{fig:concept-two}
 \end{figure}
 
 \newpage
@@ -824,27 +831,24 @@ A moss-like structure on the wall with flower bulbs embedded. The flowers 'open 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\paperwidth]{Concept-3_Crocus_Design_Diagram.jpg}
-    \caption{Design diagram of Concept-3}
-    \label{fig:timeline}
+    \caption{Design diagram of concept three (Crocus)}
+    \label{fig:concept-three}
 \end{figure}
 
 \section{Academic sample case studies}
 \label{appendix:academic}
 
-In the ideation phase and development of concept models, seven academic publications were instrumental in informing and inspiring the design process. Table 1 provides an overview of these publications, presenting details such as the title, authors, publication year, and relevant venue.
+In the ideation phase and development of the concept models an exploration of 10 academic case studies were instrumental in informing the design of the prototype. \hyperref[table:academic-cases]{Table \ref{table:academic-cases}} provides an overview of all these case studies.
 
 \begin{table}[htbp]
-\centering
-\caption{Overview of the 7 academic case studies used for the ideation phase and concept models.}
-\label{tab:my-table}
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
 \textbf{Nr.} & \textbf{Sample} & \textbf{Author(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
-1 & Econundrum & Unknown & Unknown & non-academic & \href{https://dl.acm.org/doi/10.1145/3357236.3395509}{Econundrum} \\ \hline
-2 & Caimform & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/cairnform-a-physical-ring-chart-showing-renewable-energy-data/}{Caimform} \\ \hline
-3 & Dataponics & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/dataponics-human-vegetal-play/}{Dataponics} \\ \hline
-4 & Garden of Eden & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/garden-of-eden/}{Garden of Eden} \\ \hline
-5 & Pudica & Unknown & Unknown & non-academic & \href{https://trackr-media.tangiblemedia.org/publishedmedia/Papers/715-MTA0N/Published/PDF}{Pudica} \\ \hline
+1 & Econundrum & Kim Sauvé et al. & 2020 & ACM & \href{https://dl.acm.org/doi/10.1145/3357236.3395509}{Econundrum} \\ \hline
+2 & Caimform & Maxime Daniel et al. & 2019 & HAL & \href{https://hal.science/hal-01976793/document/}{Caimform} \\ \hline
+3 & Dataponics & Robert Cercós et al. & 2016 & DEG & \href{http://dataphys.org/list/dataponics-human-vegetal-play/}{Dataponics} \\ \hline
+4 & Garden of Eden & Thorsten Kiesl et al. & 2007 & UFG & \href{http://dataphys.org/list/garden-of-eden/}{Garden of Eden} \\ \hline
+5 & Pudica & Olivia Seow et al. & 2022 & MIT & \href{https://trackr-media.tangiblemedia.org/publishedmedia/Papers/715-MTA0N/Published/PDF}{Pudica} \\ \hline
 6 & ComfortBox & Hamed S. Alavi et al. & 2017 & IFIP & \href{https://doi.org/10.1007/978-3-319-67687-6_16}{ComfortBox} 
 \\ \hline
 7 & ComFeel & Ugo Sassi et al. & 2020 & ACM & \href{https://dl.acm.org/doi/10.1145/3432234}{ComFeel} 
@@ -855,6 +859,9 @@ In the ideation phase and development of concept models, seven academic publicat
 10 & Hilo-wear & Shailin Zong et al. & 2020 & CHI & \href{https://dl.acm.org/doi/10.1145/3334480.3382813}{Hilo-wear} 
 \\ \hline
 \end{tabularx}
+\centering
+\caption{Overview of the 10 academic case studies used for the ideation phase and concept models.}
+\label{table:academic-cases}
 \end{table}
 
 \newpage
@@ -862,15 +869,12 @@ In the ideation phase and development of concept models, seven academic publicat
 \section{Non-academic sample case studies}
 \label{appendix:nonacademic}
 
-In the ideation phase and development of concept models, an exploration of non-academic case studies were instrumental in informing and inspiring the design process. Table 2 presents an overview of the 15 non-academic case studies. Each entry in the table includes essential details such as the title, creator, publication year, and a brief description of the case study's venue.
+In the ideation phase and development of the concept models an exploration of 28 non-academic case studies were instrumental in informing the design of the prototype. \hyperref[tab:non-academic-cases]{Table \ref{tab:non-academic-cases}} provides an overview of all these case studies.
 
 \begin{table}[htbp]
-\centering
-\caption{Overview of the 28 non-academic case studies used for the ideation phase and concept models.}
-\label{tab:my-table}
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
-\textbf{Nr.} & \textbf{Sample} & \textbf{Creator} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
+\textbf{Nr.} & \textbf{Sample} & \textbf{Creator(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
 1 & Birdie Design & Birdie Design & 2024 & non-academic & \href{https://www.bir.die/}{www.bir.die} \\ \hline
 2 & Fields of Informality & Zhestkov & 2024 & non-academic & \href{https://www.artco.m.com/}{www.artco.m} \\ \hline
 3 & Tree of Ténéré & Studio Drift & 2024 & non-academic & \href{https://studiodr.ift.com/}{www.studiodr} \\ \hline
@@ -900,15 +904,17 @@ In the ideation phase and development of concept models, an exploration of non-a
 27 & airFIELD & Unknown & Unknown & non-academic & \href{http://dataphys.org/list/ecloud-airfield-ambient-airport-visualizations/}{airFIELD} \\ \hline
 28 & Shanghai Spheres & Unknown & Unknown & non-academic & \href{https://www.taittowers.com/work?sort=newest}{Shanghai Spheres} \\ \hline
 \end{tabularx}
+\centering
+\caption{Overview of the 28 non-academic case studies used for the ideation phase and concept models.}
+\label{tab:non-academic-cases}
 \end{table}
 
 \section{fabrication Techniques}
 \label{appendix:fabrication}
 
+In the ideation phase and development of the concept models an exploration of 4 academic and 6 non-academic case studies were instrumental in informing the fabrication of the prototype. \hyperref[tab:fabrication-cases]{Table \ref{tab:fabrication-cases}} provides an overview of all these case studies.
+
 \begin{table}[!htbp]
-\centering
-\caption{Overview of the 4 academic and 6 non-academic sample case studies used as inspiration for fabrication of the prototype.}
-\label{tab:my-table}
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{1cm}|X|X|>{\raggedright\arraybackslash}m{1cm}|X|X|}
 \hline
 \textbf{Nr.} & \textbf{Sample} & \textbf{Author(s)} & \textbf{Year} & \textbf{Venue} & \textbf{Reference} \\ \hline
@@ -923,6 +929,8 @@ In the ideation phase and development of concept models, an exploration of non-a
 9 & Multiuse Flexible Fabric & Posix & 2024 & non-academic & \href{https://www.printables.com/model/88579-multiuse-flexible-fabric}{Printables} \\ \hline
 10 & Leaf Decorative Holder & Trilobyte3D & 2022 & non-academic & \href{https://www.printables.com/model/230363-leaf-drink-coasters-with-decorative-plant-holder}{Printables} \\ \hline
 \end{tabularx}
+\centering
+\caption{Overview of the 4 academic and 6 non-academic sample case studies used as inspiration for fabrication of the prototype.}
+\label{tab:fabrication-cases}
 \end{table}
-
 \end{appendices}

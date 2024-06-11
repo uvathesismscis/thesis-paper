@@ -58,18 +58,25 @@ These qualitative insights underscore the importance of spatial design and green
 \subsection{Air Quality Monitors}
 \label{sec:monitor_analysis}
 
-The collected data logs were exported from the monitoring devices and analyzed with a primary focus on CO2 concentrations, as this parameter significantly impacts indoor air quality (IAQ). CO2 levels accumulate due to human respiration, and air quality is heavily influenced by room occupancy. The analysis of these logs reveals occupancy patterns typical of scheduled meetings and the development of suboptimal CO2 concentrations within meeting rooms frequently exceeding the optimal threshold of 600 ppm.
+The collected data logs were exported from the monitoring devices and analyzed with a primary focus on CO2 concentrations, as this parameter significantly impacts indoor air quality (IAQ). CO2 levels accumulate due to human respiration, and air quality is heavily influenced by room occupancy. The analysis of these logs reveals occupancy patterns typical of scheduled meetings and the development of suboptimal CO2 concentrations within meeting rooms frequently exceeding the optimal threshold of 600 ppm (see \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{room-a-monitor-meeting-spike-single.png}
+    \caption{Line chart of a single meeting in the small Room A showing the start and end time of the meeting}
+    \label{fig:room-a-spike}
+\end{figure}
+
+\subsubsection{Single meeting CO2 development}
+
+A sample of CO2 concentrations (see \hyperref[fig:room-a-spike]{Figure \ref*{fig:room-a-spike}}) in a single meeting shows CO2 levels over time, with the x-axis indicating time in minutes and the y-axis showing CO2 concentrations in ppm. The ideal maximum threshold of 600 ppm is marked on the x-axis. Two colored lines on the y-axis denote the start and end times of the meeting. The data indicates that within 15 minutes of the meeting starting, CO2 levels reach suboptimal levels and continue to rise, stabilizing around 950 ppm, which is the peak concentration for the meeting. Continuous exposure to CO2 levels between 800 ppm and 1000 ppm, or higher, is considered detrimental to cognitive functions. After the meeting concludes, CO2 concentrations gradually decrease to the baseline level of 450 ppm as occupants leave the room.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{room-b-monitor-heatmap.png}
     \caption{Heatmap of ten days of data logs from Room B showing the peaks of CO2 concentrations monitored }
-    \label{fig:room-b-heatmap}
+    \label{fig:room-b-heatmap-chart}
 \end{figure}
-
-\subsubsection{Single meeting CO2 development}
-
-A sample of CO2 concentrations in a single meeting is shown in \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}}. This line plot shows CO2 levels over time, with the x-axis indicating time in minutes and the y-axis showing CO2 concentrations in ppm. The ideal maximum threshold of 600 ppm is marked on the x-axis. Two colored lines on the y-axis denote the start and end times of the meeting. The data indicates that within 15 minutes of the meeting starting, CO2 levels reach suboptimal levels and continue to rise, stabilizing around 950 ppm, which is the peak concentration for the meeting. Continuous exposure to CO2 levels between 800 ppm and 1000 ppm, or higher, is considered detrimental to cognitive functions. After the meeting concludes, CO2 concentrations gradually decrease to the baseline level of 450 ppm as occupants leave the room.
 
 \subsubsection{Regular day CO2 development}
 
@@ -77,7 +84,9 @@ The visualization in \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:mo
 
 \subsubsection{Meeting schedule CO2 development}
 
-A heatmap of ten days of CO2 concentration monitoring (see \hyperref[fig:room-b-heatmap]{Appendix \ref*{fig:room-b-heatmap}}) reveals that typically two or three meetings occur each day, usually lasting around one hour. Most of these meetings result in CO2 levels exceeding the 600 ppm threshold. Line plots and heatmaps suggest that Room B, being larger, is more frequently used and reaches higher CO2 concentrations. However, these results are not conclusive as they depend on the specific context and time periods during which data was collected and monitors were installed.
+A heatmap of ten days of CO2 concentration monitoring (see \hyperref[fig:room-b-heatmap-chart]{Figure \ref*{fig:room-b-heatmap-chart}}) reveals that typically two or three meetings occur each day, usually lasting around one hour. Most of these meetings result in CO2 levels exceeding the 600 ppm threshold. Line plots and heatmaps suggest that Room B, being larger, is more frequently used and reaches higher CO2 concentrations. However, these results are not conclusive as they depend on the specific context and time periods during which data was collected and monitors were installed.
+
+
 
 \subsection{Prototype}
 \label{sec:prototype_results}
@@ -108,9 +117,7 @@ The strings, leaves, and housings for the electronics and mechanical hardware we
 
 \subsubsection{System Architecture and software}
 
-The microcontroller runs custom firmware written in Arduino code\footnote{\url{https://www.arduino.cc/reference/en/}} (similar to C++), receiving real-time data from air quality monitors using the Lab42 internal building API (see \hyperref[appendix:api-sample-data]{Appendix \ref*{appendix:api-sample-data}}). Via an ESP32 (NodeMCU)\footnote{\url{https://www.nodemcu.com/}}, the data is sent over UART to the Arduino controller. This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}. 
-
-Custom library functions were written to calculate string movements. The current (\( C_{\text{current}} \) ) and \( C_{\text{previous}} \) CO2 concentrations are stored, with the difference calculated and mapped to a movement time \( t_{\text{movement}} \) in milliseconds. Based on whether the integer is negative or positive and a multiplication factor, the servo motors spin either clockwise (growing) or counterclockwise (shrinking) the ropes.
+The microcontroller runs custom firmware written in Arduino code\footnote{\url{https://www.arduino.cc/reference/en/}} (similar to C++), receiving real-time data from air quality monitors using the Lab42 internal building API (see \hyperref[appendix:api-sample-data]{Appendix \ref*{appendix:api-sample-data}}). Via an ESP32 (NodeMCU)\footnote{\url{https://www.nodemcu.com/}}, the data is sent over UART to the Arduino controller. This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}. Custom library functions were written to calculate string movements. The current (\( C_{\text{current}} \) ) and \( C_{\text{previous}} \) CO2 concentrations are stored, with the difference calculated and mapped to a movement time \( t_{\text{movement}} \) in milliseconds. Based on whether the integer is negative or positive and a multiplication factor, the servo motors spin either clockwise (growing) or counterclockwise (shrinking) the ropes.
 
 
 \subsection{Evaluation}

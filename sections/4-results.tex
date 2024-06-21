@@ -58,7 +58,7 @@ These qualitative insights underscore the importance of spatial design and green
 \subsection{Air Quality Monitors}
 \label{sec:monitor_analysis}
 
-The collected data logs were exported from the monitoring devices and analyzed with a primary focus on CO2 concentrations, as this parameter significantly impacts indoor air quality (IAQ). CO2 levels accumulate due to human respiration, and air quality is heavily influenced by room occupancy. The analysis of these logs reveals occupancy patterns typical of scheduled meetings and the development of suboptimal CO2 concentrations within the meeting rooms frequently exceeding the optimal threshold of 600 \textit{ppm} (see \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}}).
+The collected data logs were exported from the monitoring devices and analyzed with a primary focus on CO$_{2}$ concentrations, as this parameter significantly impacts indoor air quality (IAQ). CO$_{2}$ levels accumulate due to human respiration, and air quality is heavily influenced by room occupancy. The analysis of these logs reveals occupancy patterns typical of scheduled meetings and the development of suboptimal CO$_{2}$ concentrations within the meeting rooms frequently exceeding the optimal threshold of 600 \textit{ppm} (see \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}}).
 
 \begin{figure}[h]
     \centering
@@ -67,26 +67,26 @@ The collected data logs were exported from the monitoring devices and analyzed w
     \label{fig:room-a-spike}
 \end{figure}
 
-\subsubsection{Single meeting CO2 development}
+\subsubsection{Single meeting CO$_{2}$ development}
 
-A sample of CO2 concentrations (see \hyperref[fig:room-a-spike]{Figure \ref*{fig:room-a-spike}}) in a single meeting shows CO2 levels over time, with the x-axis indicating time in minutes and the y-axis showing CO2 concentrations in ppm. The ideal maximum threshold of 600 \textit{ppm} is marked on the x-axis. Two colored lines on the y-axis denote the start and end times of the meeting. The data indicates that within fifteen minutes of the meeting starting, CO2 levels reach suboptimal levels and continue to rise, stabilizing around 950 \textit{ppm}, which is the peak concentration for the meeting. Continuous exposure to CO2 levels between 800 \textit{ppm} and 1000 \textit{ppm}, or higher is considered detrimental to cognitive functions. After the meeting
-concluded, CO2 concentrations gradually decreased to the baseline
+A sample of CO$_{2}$ concentrations (see \hyperref[fig:room-a-spike]{Figure \ref*{fig:room-a-spike}}) in a single meeting shows CO$_{2}$ levels over time, with the x-axis indicating time in minutes and the y-axis showing CO$_{2}$ concentrations in ppm. The ideal maximum threshold of 600 \textit{ppm} is marked on the x-axis. Two colored lines on the y-axis denote the start and end times of the meeting. The data indicates that within fifteen minutes of the meeting starting, CO$_{2}$ levels reach suboptimal levels and continue to rise, stabilizing around 950 \textit{ppm}, which is the peak concentration for the meeting. Continuous exposure to CO$_{2}$ levels between 800 \textit{ppm} and 1000 \textit{ppm}, or higher is considered detrimental to cognitive functions. After the meeting
+concluded, CO$_{2}$ concentrations gradually decreased to the baseline
 level of 450 \textit{ppm} as occupants left the room.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{room-b-monitor-heatmap.png}
-    \caption{Heatmap of ten days of data logs from Room B showing the peaks of CO2 concentrations monitored }
+    \caption{Heatmap of ten days of data logs from Room B showing the peaks of CO$_{2}$ concentrations monitored }
     \label{fig:room-b-heatmap-chart}
 \end{figure}
 
-\subsubsection{Regular day CO2 development}
+\subsubsection{Regular day CO$_{2}$ development}
 
-The visualization in \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}} depicts CO2 concentration spikes throughout a typical day with multiple meetings. The x-axis plots CO2 levels, while the y-axis represents the full day within the building’s opening hours. Data from randomly sampled days show that most meetings occur between late morning (11:00) and late afternoon (17:00), roughly two hours after the building opens and four hours before it closes. There are outliers, with some meetings occurring early in the morning right after opening and occasionally extending into the evening.
+The visualization in \hyperref[appendix:monitor-data]{Appendix \ref*{appendix:monitor-data}} depicts CO$_{2}$ concentration spikes throughout a typical day with multiple meetings. The x-axis plots CO$_{2}$ levels, while the y-axis represents the full day within the building’s opening hours. Data from randomly sampled days show that most meetings occur between late morning (11:00) and late afternoon (17:00), roughly two hours after the building opens and four hours before it closes. There are outliers, with some meetings occurring early in the morning right after opening and occasionally extending into the evening.
 
-\subsubsection{Meeting schedule CO2 development}
+\subsubsection{Meeting schedule CO$_{2}$ development}
 
-A heatmap of ten days of CO2 concentration monitoring (see \hyperref[fig:room-b-heatmap-chart]{Figure \ref*{fig:room-b-heatmap-chart}}) reveals that typically two or three meetings occur each day, usually lasting around one hour. Most of these meetings result in CO2 levels exceeding the 600 ppm threshold. Line plots and heatmaps suggest that Room B, being larger, is more frequently used and reaches higher CO2 concentrations. However, these results lack conclusiveness because they depend on the specific context and periods during which data was collected and monitors were installed.
+A heatmap of ten days of CO$_{2}$ concentration monitoring (see \hyperref[fig:room-b-heatmap-chart]{Figure \ref*{fig:room-b-heatmap-chart}}) reveals that typically two or three meetings occur each day, usually lasting around one hour. Most of these meetings result in CO$_{2}$ levels exceeding the 600 ppm threshold. Line plots and heatmaps suggest that Room B, being larger, is more frequently used and reaches higher CO$_{2}$ concentrations. However, these results lack conclusiveness because they depend on the specific context and periods during which data was collected and monitors were installed.
 
 
 \subsection{Prototype}
@@ -96,17 +96,17 @@ Based on the requirements, data physicalization design principles, and explorati
 
 \subsubsection{Concept description}
 
-The prototype, named \textit{Bluebird}, is a hanging kinetic sculpture inspired by natural materials and the shapes of hanging planters. It encodes indoor air quality (IAQ) data to foster a relationship with nature. Designed to be hung from the ceiling in small to medium-sized rooms, it changes based on real-time air quality data, engaging occupants with the air quality levels. The artefict features strings (representing plant branches) that elongate or contract, simulating plant growth, and leaves that move to indicate air freshness and movement. The design philosophy employs calm technology to minimize interruption costs \cite{case_calm_2016}. Unlike existing solutions, Bluebird provides predictions and historical data, not just feedback on current conditions when CO2 levels are high.
+The prototype, named \textit{Bluebird}, is a hanging kinetic sculpture inspired by natural materials and the shapes of hanging planters. It encodes indoor air quality (IAQ) data to foster a relationship with nature. Designed to be hung from the ceiling in small to medium-sized rooms, it changes based on real-time air quality data, engaging occupants with the air quality levels. The artefict features strings (representing plant branches) that elongate or contract, simulating plant growth, and leaves that move to indicate air freshness and movement. The design philosophy employs calm technology to minimize interruption costs \cite{case_calm_2016}. Unlike existing solutions, Bluebird provides predictions and historical data, not just feedback on current conditions when CO$_{2}$ levels are high.
 
 \subsubsection{Experimental set-up}
 
 The prototype was installed \textit{in situ} in one of the meeting rooms in the building (see \hyperref[fig:photograph-prototype]{Figure \ref*{fig:photograph-prototype}}). Four dimensions were derived from the literature to describe the prototype: \textit{properties, environment, interaction, and representation} \cite{sauve_physecology_2022, hornecker_design_2023, anhalt_university_germany_design_2022}.
 
 \begin{itemize}
-  \item \textbf{Properties}: The technology-assisted physicalization uses explicit visual variables such as size, position, timing, and movement where occupants visually see the strings becoming larger (height) and leaves moving to change the visual arrangement (movement), all based on the temporal frequency of CO2 concentrations.
+  \item \textbf{Properties}: The technology-assisted physicalization uses explicit visual variables such as size, position, timing, and movement where occupants visually see the strings becoming larger (height) and leaves moving to change the visual arrangement (movement), all based on the temporal frequency of CO$_{2}$ concentrations.
   \item \textbf{Environment}: The design uses associative metaphors through shapes and movement, resembling organic forms found in nature (shape and form). It is a medium to large-scale (50 - 150 cm) physicalization, placed semi-publicly within the open building context.
   \item \textbf{Interaction}: The artifact communicates environmental data, aiding in understanding and encouraging reflection. It features indirect interaction, changing based on occupant activity.
-  \item \textbf{Representation}: The dataset is dynamic, streaming real-time environmental data from building sensors and outputting categorical data on CO2 concentration variations.
+  \item \textbf{Representation}: The dataset is dynamic, streaming real-time environmental data from building sensors and outputting categorical data on CO$_{2}$ concentration variations.
 \end{itemize}
 
 \subsubsection{Electronics and components}
@@ -118,7 +118,7 @@ The strings, leaves, and housings for the electronics and mechanical hardware we
 
 \subsubsection{System Architecture and software}
 
-The microcontroller runs custom firmware written in Arduino code\footnote{\url{https://www.arduino.cc/reference/en/}} (similar to C++), receiving real-time data from air quality monitors using the Lab42 internal building API (see \hyperref[appendix:api-sample-data]{Appendix \ref*{appendix:api-sample-data}}). Via an ESP32 (NodeMCU)\footnote{\url{https://www.nodemcu.com/}}, the data is sent over UART to the Arduino controller. This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}. Custom library functions were written to calculate string movements. The current (\( C_{\text{current}} \) ) and \( C_{\text{previous}} \) CO2 concentrations are stored, with the difference calculated and mapped to a movement time \( t_{\text{movement}} \) in milliseconds. Based on whether the integer is negative or positive and a multiplication factor, the servo motors spin either clockwise (growing) or counterclockwise (shrinking) the ropes.
+The microcontroller runs custom firmware written in Arduino code\footnote{\url{https://www.arduino.cc/reference/en/}} (similar to C++), receiving real-time data from air quality monitors using the Lab42 internal building API (see \hyperref[appendix:api-sample-data]{Appendix \ref*{appendix:api-sample-data}}). Via an ESP32 (NodeMCU)\footnote{\url{https://www.nodemcu.com/}}, the data is sent over UART to the Arduino controller. This arrangement of hardware is commonly found in Internet of Things (IoT) architecture set-ups and follows the notion of Edge Computing with a (1) sensing, (2) networking, (3) processing, and (4) application layer \cite{li_edge-oriented_2019, idrees_edge_2018}. Custom library functions were written to calculate string movements. The current (\( C_{\text{current}} \) ) and \( C_{\text{previous}} \) CO$_{2}$ concentrations are stored, with the difference calculated and mapped to a movement time \( t_{\text{movement}} \) in milliseconds. Based on whether the integer is negative or positive and a multiplication factor, the servo motors spin either clockwise (growing) or counterclockwise (shrinking) the ropes.
 
 
 \subsection{Evaluation}
@@ -152,7 +152,7 @@ P1: "[...] on initial view it's a bit of a puzzle what IAQ properties it communi
 
 \subsubsection{Design Improvements and recommendations (effectiveness)}
 
-Participants suggested numerous design improvements and recommendations during usability testing. These suggestions, coded and categorized, primarily aimed to increase the physicalization's overall effectiveness (see \hyperref[appendix:improvements]{Appendix \ref*{appendix:improvements}}). \textit{P1, P2, and P3 } emphasized that the positioning of the physicalization within the room significantly impacts its effectiveness for all occupants. Additionally, \textit{P1, P3, and P5} recommended color-coding or labeling the leaves indicating the history, current, and future predictions of CO2 concentrations to make this property more apparent.
+Participants suggested numerous design improvements and recommendations during usability testing. These suggestions, coded and categorized, primarily aimed to increase the physicalization's overall effectiveness (see \hyperref[appendix:improvements]{Appendix \ref*{appendix:improvements}}). \textit{P1, P2, and P3 } emphasized that the positioning of the physicalization within the room significantly impacts its effectiveness for all occupants. Additionally, \textit{P1, P3, and P5} recommended color-coding or labeling the leaves indicating the history, current, and future predictions of CO$_{2}$ concentrations to make this property more apparent.
 
 \begin{quote}
 P3: "I feel like the positioning within the room is important. [...] You want the physicalization visible to all occupants within the room. Putting it next to the door or one wall makes people sit with their back to it."

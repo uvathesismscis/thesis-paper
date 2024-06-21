@@ -233,7 +233,7 @@ A screenshot of the internal Lab42 building API documentation (see \hyperref[fig
 \section{Air Quality Monitors sample data}
 \label{appendix:monitors}
 
-Sample data logs (see \hyperref[tab:room-a]{Table \ref{tab:room-a}} and \hyperref[tab:room-b]{Table \ref{tab:room-b}} ) of the indoor air quality monitor devices installed in the small and large meeting rooms. These data logs were stored on-device during the data collection phase and exported for analysis. Both devices used the same polling rate but differed in the sensory readings the device was capable of. Both have data and timestamps, CO2 concentrations, temperature, and humidity, which were used for the scope of this research.
+Sample data logs (see \hyperref[tab:room-a]{Table \ref{tab:room-a}} and \hyperref[tab:room-b]{Table \ref{tab:room-b}} ) of the indoor air quality monitor devices installed in the small and large meeting rooms. These data logs were stored on-device during the data collection phase and exported for analysis. Both devices used the same polling rate but differed in the sensory readings the device was capable of. Both have data and timestamps, CO$_{2}$ concentrations, temperature, and humidity, which were used for the scope of this research.
 
 \begin{table}[H]
     \centering
@@ -241,7 +241,7 @@ Sample data logs (see \hyperref[tab:room-a]{Table \ref{tab:room-a}} and \hyperre
     \tiny
     \begin{tabular}{@{} *{11}{c} @{}}
         \toprule
-        \textbf{Date} & \textbf{Time} & \textbf{CO2} & \textbf{Temp} & \textbf{RH} & \textbf{PM1.0} & \textbf{PM2.5} & \textbf{PM10} & \textbf{TVOC} & \textbf{BP} & \textbf{O3} \\
+        \textbf{Date} & \textbf{Time} & \textbf{CO$_{2}$} & \textbf{Temp} & \textbf{RH} & \textbf{PM1.0} & \textbf{PM2.5} & \textbf{PM10} & \textbf{TVOC} & \textbf{BP} & \textbf{O3} \\
         \midrule
         2024/04/03 & 10:30 & 647 & 21'C & 39\% & 0 & 0 & 0 & 255 & 99.97 & 0 \\
         2024/04/03 & 10:29 & 641 & 21'C & 39\% & 0 & 0 & 0 & 249 & 99.97 & 0 \\
@@ -270,7 +270,7 @@ Sample data logs (see \hyperref[tab:room-a]{Table \ref{tab:room-a}} and \hyperre
     \tiny
     \begin{tabular}{@{} *{11}{c} @{}}
         \toprule
-        \textbf{Date} & \textbf{Time} & \textbf{Temp} & \textbf{RH} & \textbf{DewPoint} & \textbf{CO2} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} \\
+        \textbf{Date} & \textbf{Time} & \textbf{Temp} & \textbf{RH} & \textbf{DewPoint} & \textbf{CO$_{2}$} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} \\
         \midrule
         10/04/2024 & 14:17:00 & 21.019 & 30.780 & 3.176 & 871.000 \\
         10/04/2024 & 14:18:00 & 21.039 & 30.573 & 3.098 & 871.000 \\
@@ -448,24 +448,24 @@ Plots for specific questions of the survey questionnaire data exported from Qual
 \section{Monitor data}
 \label{appendix:monitor-data}
 
-Plots of the indoor air quality monitor data logs (see \hyperref[fig:monitoring-single]{Figure \ref{fig:monitoring-single}}, \hyperref[fig:monitoring-multiple]{Figure \ref{fig:monitoring-multiple}}, \hyperref[fig:monitoring-heatmap]{Figure \ref{fig:monitoring-heatmap}}). All graphs show the CO2 concentrations in either the small (Room A) or large (Room B) meeting rooms. The plots are subsets of the data logs which show interesting patterns and peaks based on the observed timeframe of the data collection phase.
+Plots of the indoor air quality monitor data logs (see \hyperref[fig:monitoring-single]{Figure \ref{fig:monitoring-single}}, \hyperref[fig:monitoring-multiple]{Figure \ref{fig:monitoring-multiple}}, \hyperref[fig:monitoring-heatmap]{Figure \ref{fig:monitoring-heatmap}}). All graphs show the CO$_{2}$ concentrations in either the small (Room A) or large (Room B) meeting rooms. The plots are subsets of the data logs which show interesting patterns and peaks based on the observed timeframe of the data collection phase.
 
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-a-monitor-meeting-spike-single.png}
-        \caption{Single meeting CO2 concentrations in Room A}
+        \caption{Single meeting CO$_{2}$ concentrations in Room A}
         \label{fig:monitor-single-a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-b-monitor-meeting-spike-single.png}
-        \caption{Single meeting CO2 concentrations in Room B}
+        \caption{Single meeting CO$_{2}$ concentrations in Room B}
         \label{fig:monitor-single-b}
     \end{subfigure}
-    \caption{IAQ monitoring CO2 concentrations of a single sample meeting based on the start and end time of the meeting}
+    \caption{IAQ monitoring CO$_{2}$ concentrations of a single sample meeting based on the start and end time of the meeting}
     \label{fig:monitoring-single}
 \end{figure}
 
@@ -474,17 +474,17 @@ Plots of the indoor air quality monitor data logs (see \hyperref[fig:monitoring-
     \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-a-monitor-meeting-spike-day.png}
-        \caption{A day of meetings CO2 concentrations in Room A}
+        \caption{A day of meetings CO$_{2}$ concentrations in Room A}
         \label{fig:monitor-multiple-a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.46\textwidth}
         \centering
         \includegraphics[width=\textwidth]{room-b-monitor-meeting-spike-day.png}
-        \caption{A day of meetings CO2 concentrations in Room B}
+        \caption{A day of meetings CO$_{2}$ concentrations in Room B}
         \label{fig:monitor-multiple-b}
     \end{subfigure}
-    \caption{IAQ monitoring CO2 concentrations of a sample day meeting based on the opening hours of the building}
+    \caption{IAQ monitoring CO$_{2}$ concentrations of a sample day meeting based on the opening hours of the building}
     \label{fig:monitoring-multiple}
 \end{figure}
 
@@ -503,7 +503,7 @@ Plots of the indoor air quality monitor data logs (see \hyperref[fig:monitoring-
         \caption{Heatmap of ten days of monitoring in Room B}
         \label{fig:monitor-heatmap-b}
     \end{subfigure}
-    \caption{IAQ monitoring heatmap CO2 concentrations of the sample ten days based on the opening hours of the building}
+    \caption{IAQ monitoring heatmap CO$_{2}$ concentrations of the sample ten days based on the opening hours of the building}
     \label{fig:monitoring-heatmap}
 \end{figure}
 
